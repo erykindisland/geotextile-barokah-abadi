@@ -1,0 +1,349 @@
+---
+export interface Props {
+	title: string;
+	description: string;
+	canonicalUrl?: string;
+}
+
+const { title, description, canonicalUrl } = Astro.props;
+---
+
+<!doctype html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<!-- SEO Meta Tags -->
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		{canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+		
+		<!-- OpenGraph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={Astro.url} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content="/og-image.webp" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={Astro.url} />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content="/og-image.webp" />
+
+		<link rel="icon" type="image/webp" href="/favicon.webp" />
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="container header-inner">
+				<a href="/" class="logo">
+					<span class="logo-accent">Geotextile</span> Barokah Abadi
+				</a>
+				<nav class="main-nav">
+					<button class="mobile-menu-toggle" aria-label="Toggle Menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<ul class="nav-links">
+						<li><a href="/">Beranda</a></li>
+						<li><a href="/produk">Produk</a></li>
+						<li><a href="/tentang-kami">Tentang</a></li>
+						<li><a href="/kontak">Kontak</a></li>
+						<li><a href="https://wa.me/628881211529" class="nav-cta">Hubungi Kami</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<slot />
+		</main>
+		<footer class="main-footer">
+			<div class="container footer-grid">
+				<div class="footer-brand">
+					<div class="footer-logo">
+						<span class="logo-accent">Geotextile</span> Barokah Abadi
+					</div>
+					<p>Distributor tangan pertama material geosintetik berkualitas tinggi. Solusi cerdas untuk perkuatan tanah dan sistem drainase proyek nasional.</p>
+				</div>
+				
+				<div class="footer-contact">
+					<h3>Hubungi Kami</h3>
+					<ul>
+						<li>📍 Tangerang, Banten, Indonesia</li>
+						<li>📞 +62 888 1211 529</li>
+						<li>✉️ info@barokahabadi.web.id</li>
+						<li>⏰ Senin - Sabtu (08:00 - 17:00)</li>
+					</ul>
+				</div>
+				
+				<div class="footer-links">
+					<h3>Navigasi</h3>
+					<ul>
+						<li><a href="/">Beranda</a></li>
+						<li><a href="/produk">Katalog Produk</a></li>
+						<li><a href="/tentang-kami">Tentang Kami</a></li>
+						<li><a href="https://wa.me/628881211529">Hubungi Kami (WA)</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="container footer-bottom">
+				<p>&copy; {new Date().getFullYear()} Geotextile Barokah Abadi. Seluruh hak cipta dilindungi.</p>
+			</div>
+		</footer>
+
+		<!-- Tombol WhatsApp Terapung (Floating Widget) -->
+		<a href="https://wa.me/628881211529?text=Halo%20Geotextile%20Barokah%20Abadi,%20saya%20butuh%20info%20lebih%20lanjut" target="_blank" class="floating-wa" aria-label="Chat WhatsApp">
+			<svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor">
+				<path d="M16 2.396C8.5 2.396 2.4 8.5 2.4 16c0 2.4.63 4.69 1.76 6.696L2.4 29.6l7.085-1.86c1.944 1.056 4.15 1.62 6.47 1.62 7.5 0 13.6-6.1 13.6-13.6C29.6 8.5 23.5 2.396 16 2.396M16 26.966c-2.073 0-4.043-.538-5.787-1.484l-.415-.246-4.29 1.127 1.144-4.184-.27-.43C5.518 19.98 5 18.04 5 16c0-6.066 4.935-11.002 11.002-11.002S27.002 9.935 27.002 16c0 6.066-4.935 11.002-11.002 11.002m6.065-8.286c-.333-.167-1.968-.97-2.274-1.082-.304-.112-.526-.168-.748.167-.222.334-.863 1.08-.1058 1.303-.195.223-.393.25-.726.084-.333-.167-1.405-.518-2.678-1.656-.99-.885-1.658-1.98-1.854-2.313-.195-.333-.02-.513.146-.68.15-.148.333-.39.5-.584.167-.194.22-.332.333-.555.11-.223.056-.417-.028-.584-.084-.167-.748-1.803-1.025-2.468-.27-.65-.544-.563-.747-.574-.195-.01-.418-.01-.64-.01s-.584.084-.89.418c-.305.334-1.168 1.14-1.168 2.778 0 1.64 1.196 3.224 1.363 3.447.168.223 2.35 3.585 5.694 5.03 2.44 1.055 3.197.945 3.864.723.666-.223 1.967-.806 2.245-1.584.277-.777.277-1.444.195-1.584-.084-.14-.306-.222-.64-.39"/>
+			</svg>
+		</a>
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		--primary: #064e3b; /* Deep Emerald */
+		--primary-light: #10b981;
+		--secondary: #fbbf24; /* Amber */
+		--accent: #f59e0b;
+		--text-main: #1e293b;
+		--text-muted: #64748b;
+		--white: #ffffff;
+		--bg-light: #f8fafc;
+		--shadow-pre: 0 4px 20px -5px rgba(0, 0, 0, 0.1);
+		--glass-bg: rgba(255, 255, 255, 0.85);
+	}
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	html {
+		scroll-behavior: smooth;
+	}
+	body {
+		font-family: 'Inter', sans-serif;
+		color: var(--text-main);
+		background-color: var(--bg-light);
+		line-height: 1.6;
+		overflow-x: hidden;
+	}
+	h1, h2, h3, h4, .logo {
+		font-family: 'Outfit', sans-serif;
+	}
+	.container {
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 24px;
+	}
+	
+	/* Header Glassmorphism */
+	.main-header {
+		background: var(--glass-bg);
+		backdrop-filter: blur(12px);
+		-webkit-backdrop-filter: blur(12px);
+		padding: 18px 0;
+		position: sticky;
+		top: 0;
+		z-index: 1000;
+		border-bottom: 1px solid rgba(255,255,255,0.3);
+		box-shadow: var(--shadow-pre);
+	}
+	.header-inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.logo {
+		font-size: 1.6rem;
+		font-weight: 700;
+		color: var(--accent);
+		text-decoration: none;
+		letter-spacing: -0.5px;
+	}
+	.logo-accent {
+		color: var(--accent);
+	}
+
+	.nav-links {
+		display: flex;
+		gap: 30px;
+		list-style: none;
+		align-items: center;
+	}
+	.nav-links a {
+		text-decoration: none;
+		color: var(--text-main);
+		font-weight: 600;
+		font-size: 1rem;
+		transition: all 0.3s;
+		position: relative;
+	}
+	.nav-links a:not(.nav-cta)::after {
+		content: '';
+		position: absolute;
+		bottom: -4px;
+		left: 0;
+		width: 0;
+		height: 2px;
+		background: var(--accent);
+		transition: width 0.3s;
+	}
+	.nav-links a:hover::after {
+		width: 100%;
+	}
+	.nav-links a:hover {
+		color: var(--primary);
+	}
+	.nav-cta {
+		background: var(--primary);
+		color: white !important;
+		padding: 10px 22px;
+		border-radius: 50px;
+		box-shadow: 0 4px 10px rgba(6, 78, 59, 0.2);
+	}
+	.nav-cta:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 6px 15px rgba(6, 78, 59, 0.3);
+		background: #042f24;
+	}
+
+	.mobile-menu-toggle {
+		display: none;
+		flex-direction: column;
+		gap: 6px;
+		background: none;
+		border: none;
+		cursor: pointer;
+	}
+	.mobile-menu-toggle span {
+		display: block;
+		width: 28px;
+		height: 3px;
+		background: var(--primary);
+		border-radius: 3px;
+	}
+
+	.main-footer {
+		background-color: #0f172a;
+		color: #94a3b8;
+		padding: 80px 0 30px;
+		margin-top: 100px;
+	}
+	.footer-grid {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+		gap: 60px;
+		margin-bottom: 60px;
+	}
+	.footer-brand p {
+		margin-top: 20px;
+		max-width: 400px;
+	}
+	.footer-logo {
+		font-family: 'Outfit', sans-serif;
+		font-size: 1.8rem;
+		font-weight: 700;
+		color: var(--accent);
+	}
+	.main-footer h3 {
+		color: #fff;
+		font-size: 1.2rem;
+		margin-bottom: 25px;
+	}
+	.main-footer ul {
+		list-style: none;
+	}
+	.main-footer ul li {
+		margin-bottom: 15px;
+		font-size: 0.95rem;
+	}
+	.footer-links a {
+		color: #94a3b8;
+		text-decoration: none;
+		transition: color 0.3s;
+	}
+	.footer-links a:hover {
+		color: var(--secondary);
+	}
+	.footer-bottom {
+		padding-top: 30px;
+		border-top: 1px solid rgba(255,255,255,0.1);
+		text-align: center;
+		font-size: 0.9rem;
+	}
+
+	@media (max-width: 768px) {
+		.footer-grid {
+			grid-template-columns: 1fr;
+			gap: 40px;
+		}
+	}
+	
+	/* Utility global untuk animasi CSS */
+	@keyframes fadeIn {
+		from { opacity: 0; transform: translateY(20px); }
+		to { opacity: 1; transform: translateY(0); }
+	}
+
+	/* Floating WhatsApp Widget with Pulse Effect */
+	.floating-wa {
+		position: fixed;
+		bottom: 30px;
+		right: 30px;
+		background-color: #25D366;
+		color: white;
+		width: 65px;
+		height: 65px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+		z-index: 1000;
+		transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	}
+	.floating-wa::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		background: #25D366;
+		z-index: -1;
+		animation: pulse 2s infinite;
+	}
+	@keyframes pulse {
+		0% { transform: scale(1); opacity: 0.5; }
+		100% { transform: scale(1.6); opacity: 0; }
+	}
+	.floating-wa:hover {
+		transform: scale(1.1);
+		box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+	}
+	@media (max-width: 768px) {
+		.floating-wa {
+			bottom: 20px;
+			right: 20px;
+			width: 58px;
+			height: 58px;
+		}
+		.nav-links {
+			display: none;
+		}
+		.mobile-menu-toggle {
+			display: flex;
+		}
+	}
+</style>
+

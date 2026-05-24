@@ -1,0 +1,352 @@
+---
+import { getCollection, render } from 'astro:content';
+import { Image } from 'astro:assets';
+import Layout from '../../layouts/Layout.astro';
+
+// SSG Path Mapping
+export async function getStaticPaths() {
+  const produkEntries = await getCollection('produk');
+  
+  return produkEntries.map(entry => ({
+    params: { slug: entry.id }, 
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+// Fetch other products for the sidebar
+const allProducts = await getCollection('produk');
+const otherProducts = allProducts.filter(p => p.id !== entry.id).slice(0, 5);
+
+// SEO Schema
+const schemaMarkup = {
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": entry.data.title,
+  "description": entry.data.description,
+  "image": entry.data.image ? (typeof entry.data.image === 'string' ? entry.data.image : entry.data.image.src) : '',
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "IDR",
+    "lowPrice": entry.data.priceLow || 0,
+    "highPrice": entry.data.priceHigh || 0,
+    "availability": "https://schema.org/InStock"
+  },
+  "brand": {
+    "@type": "Brand",
+    "name": "Geotextile Barokah Abadi"
+  }
+};
+
+const waMessage = encodeURIComponent(`Halo Geotextile Barokah, saya tertarik dengan produk ${entry.data.title}. Boleh minta penawaran harganya?`);
+---
+
+<Layout title={entry.data.title} description={entry.data.description}>
+  <script type="application/ld+json" set:html={JSON.stringify(schemaMarkup)} />
+
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <a href="/">Beranda</a>
+        <span class="sep">/</span>
+        <a href="/produk">Katalog</a>
+        <span class="sep">/</span>
+        <span class="curr">{entry.data.title}</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="product-detail-section">
+    <div class="container container-flex">
+      <!-- Main Content -->
+      <article class="main-content">
+        <header class="product-header">
+            <span class="cat-label">{entry.data.category || 'Geosintetik'}</span>
+            <h1>{entry.data.title}</h1>
+        </header>
+
+        {entry.data.image && (
+           <div class="featured-image">
+              {typeof entry.data.image === 'string' ? (
+                <img src={entry.data.image} alt={entry.data.title} class="rounded-img" />
+              ) : (
+                <Image src={entry.data.image} alt={entry.data.title} width={1200} height={600} format="webp" class="rounded-img" />
+              )}
+           </div>
+        )}
+
+        <div class="prose-content">
+            <Content />
+        </div>
+        
+        <div class="product-cta-bottom">
+            <h3>Konsultasi Kebutuhan Proyek Gratis</h3>
+            <p>Dapatkan hitungan volume dan spesifikasi yang paling efisien untuk proyek Anda.</p>
+            <a href={`https://wa.me/628881211529?text=${waMessage}`} class="btn-wa-big">
+                Hubungi via WhatsApp Sekarang
+            </a>
+        </div>
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-widget">
+            <h3>Produk Terkait</h3>
+            <div class="related-list">
+                {otherProducts.map(prod => (
+                    <a href={`/produk/${prod.id}`} class="related-item">
+                        <span class="item-title">{prod.data.title}</span>
+                        <span class="item-arrow">&rarr;</span>
+                    </a>
+                ))}
+            </div>
+            <a href="/produk" class="view-all-link">Lihat Semua Produk &raquo;</a>
+        </div>
+
+        <div class="sidebar-widget dark-widget">
+            <h3>Mengapa Barokah?</h3>
+            <ul class="usp-mini">
+                <li>✅ Distributor Tangan Pertama</li>
+                <li>✅ Kualitas Standar SNI/Bina Marga</li>
+                <li>✅ Pengiriman Seluruh Indonesia</li>
+                <li>✅ Ready Stock Skala Besar</li>
+            </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .breadcrumb-bar {
+    background: #f8fafc;
+    padding: 15px 0;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  .breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: #64748b;
+  }
+  .breadcrumbs a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 500;
+  }
+  .breadcrumbs .sep {
+    opacity: 0.5;
+  }
+  .breadcrumbs .curr {
+    color: #94a3b8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .product-detail-section {
+    padding: 60px 0 100px;
+  }
+  .container-flex {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 50px;
+    align-items: start;
+  }
+
+  /* Main Content Styles */
+  .product-header {
+    margin-bottom: 30px;
+  }
+  .cat-label {
+    display: inline-block;
+    background: rgba(6, 78, 59, 0.1);
+    color: var(--primary);
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .product-header h1 {
+    font-size: 3rem;
+    color: #0f172a;
+    line-height: 1.2;
+    margin: 0;
+  }
+  
+  .featured-image {
+    margin-bottom: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  }
+  .rounded-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Markdown Rendering */
+  .prose-content :global(h2) {
+    font-size: 2.2rem;
+    color: var(--primary);
+    margin: 40px 0 20px;
+    font-weight: 700;
+  }
+  .prose-content :global(p) {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #334155;
+    margin-bottom: 25px;
+  }
+  .prose-content :global(table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  .prose-content :global(th) {
+    background: var(--primary);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 1rem;
+  }
+  .prose-content :global(td) {
+    padding: 15px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #475569;
+  }
+  .prose-content :global(tr:last-child td) {
+    border-bottom: none;
+  }
+
+  .product-cta-bottom {
+    background: #f1f5f9;
+    padding: 40px;
+    border-radius: 24px;
+    text-align: center;
+    margin-top: 60px;
+    border: 1px solid #e2e8f0;
+  }
+  .product-cta-bottom h3 {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+  }
+  .product-cta-bottom p {
+    color: #64748b;
+    margin-bottom: 30px;
+  }
+  .btn-wa-big {
+    display: inline-block;
+    background: #25d366;
+    color: white;
+    padding: 18px 40px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: transform 0.3s;
+  }
+  .btn-wa-big:hover {
+    background: #128c7e;
+    transform: scale(1.05);
+  }
+
+  /* Sidebar Styles */
+  .sidebar {
+    position: sticky;
+    top: 100px;
+  }
+  .sidebar-widget {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    border: 1px solid #f1f5f9;
+    margin-bottom: 30px;
+  }
+  .sidebar-widget h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #0f172a;
+    border-left: 4px solid var(--primary);
+    padding-left: 15px;
+  }
+  .related-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  .related-item {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background: #f8fafc;
+    border-radius: 10px;
+    transition: all 0.3s;
+  }
+  .related-item:hover {
+    background: var(--primary);
+    color: white !important;
+  }
+  .item-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #334155;
+    line-height: 1.4;
+  }
+  .related-item:hover .item-title {
+    color: white;
+  }
+  .view-all-link {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .dark-widget {
+    background: var(--primary);
+    color: white;
+  }
+  .dark-widget h3 {
+    color: white;
+    border-color: var(--secondary);
+  }
+  .usp-mini {
+    list-style: none;
+    padding: 0;
+  }
+  .usp-mini li {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    opacity: 0.9;
+  }
+
+  @media (max-width: 1024px) {
+    .container-flex {
+        grid-template-columns: 1fr;
+    }
+    .sidebar {
+        position: static;
+    }
+    .product-header h1 {
+        font-size: 2.2rem;
+    }
+  }
+</style>

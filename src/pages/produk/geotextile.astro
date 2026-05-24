@@ -1,0 +1,218 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+// Silo Schema Markup - Membantu Google mengerti ini produk jualan
+const schemaMarkup = {
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Geotextile Non Woven & Woven Standar SNI",
+  "image": "https://geotextile-Geotextile Barokah Abadi.pages.dev/favicon.svg",
+  "description": "Distributor pabrik Geotextile Non Woven (PET/PP) 150gr - 700gr dan Geotextile Woven kekuatan tinggi untuk proyek sipil, stabilisasi tanah dan jalan tol.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Geotextile Barokah Abadi"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "url": "https://geotextile-Geotextile Barokah Abadi.pages.dev/produk/geotextile",
+    "priceCurrency": "IDR",
+    "lowPrice": "7000",
+    "highPrice": "45000",
+    "offerCount": "25"
+  }
+};
+---
+
+<Layout 
+	title="Distributor Geotextile Non Woven & Woven SNI Murah | Geotextile Barokah Abadi"
+	description="Pusat jual Geotextile Non Woven dan Woven berkualitas ekspor SNI. Ready stock per roll untuk pengiriman proyek ke seluruh Indonesia langsung dari pabrik."
+>
+	<!-- Injeksi Microdata SEO Lokal ke dalam Halaman -->
+	<script type="application/ld+json" set:html={JSON.stringify(schemaMarkup)} />
+
+	<!-- Breadcrumbs (Penting untuk Navigasi Google Silo) -->
+	<div class="breadcrumb-container">
+		<div class="container">
+			<ul class="breadcrumbs">
+				<li><a href="/">Beranda</a></li>
+				<li><span>/</span></li>
+				<li><a href="/produk">Katalog Produk</a></li>
+				<li><span>/</span></li>
+				<li class="active">Geotextile</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Page Header dengan Golden Keyword -->
+	<header class="page-header">
+		<div class="container">
+			<h1>Pabrik Geotextile: Non Woven & Woven SNI Termurah</h1>
+			<p class="subtitle">Material perkuatan dasar tanah, filtrasi, dan separasi andalan proyek jalan tol Bina Marga dengan <em>Tensile Strength</em> (Kuat Tarik) bersertifikat resmi laboratorium.</p>
+		</div>
+	</header>
+
+	<main class="container content">
+		<section class="overview">
+			<h2>Solusi Terbaik untuk Struktur Tanah Lunak & Gambut</h2>
+			<p>Menghadapi tantangan jalan amblas, timbunan rawa, atau lumpur berat memerlukan material penyaring ekstra tangguh. Sebagai <strong>Tangan Pertama Pabrik Geotextile</strong>, Geotextile Barokah Abadi menjamin material Geotextile Woven maupun Non Woven (berbahan baku Polyester/PET dan Polypropylene/PP) yang kami berikan teruji tangguh, alot, bebas pelapukan, dan sesuai standarisasi konstruksi Indonesia.</p>
+		</section>
+
+		<!-- Daftar Produk spesifik (Memancing KGR Long-tail) -->
+		<section class="products-list">
+			<article class="product-item">
+				<div class="product-text">
+					<h3>1. Geotextile Non Woven (Tipe PET & PP)</h3>
+					<p>Material berwarna putih mirip karpet ini berbahan serat polimer tak teranyam. Berfungsi ajaib sebagai penyaring (<em>Filter</em>) aliran air rembesan, dan pemisah (<em>Separator</em>) agar timbunan agregat jalan tidak tenggelam tersedot ke zona lumpur bagian bawah.</p>
+					<ul>
+						<li><strong>Gramasi Ready:</strong> 150gr, 200gr, 250gr, 300gr hingga 700gr.</li>
+						<li><strong>Aplikasi:</strong> Jalan Tol, Bantalan Rel Kereta Api, Pembungkus Pipa Drainase (French Drain), Lapisan Curing Beton.</li>
+					</ul>
+					<a href="https://wa.me/62812345678" target="_blank" class="btn-whatsapp">Tanya Harga Non Woven via WhatsApp &rarr;</a>
+				</div>
+			</article>
+
+			<article class="product-item">
+				<div class="product-text">
+					<h3>2. Geotextile Woven (Karung Anyam Super)</h3>
+					<p>Berwarna hitam kelam, ini adalah anyaman pita polimer yang kokoh menyilang tegak lurus. Memiliki daya <em>Tensile Strength</em> luar biasa yang jauh lebih ekstrem dibanding seri Non Woven. Sangat andal dimanfaatkan di lahan gambut atau tambak.</p>
+					<ul>
+						<li><strong>Tipe Ready:</strong> 150 Gram, 200 Gram, 250 Gram (Standar Bina Marga).</li>
+						<li><strong>Aplikasi:</strong> Stabilisasi Lahan Gambut, Reklamasi Pesisir Pantai, Perkuatan Lereng ekstrem.</li>
+					</ul>
+					<a href="https://wa.me/62812345678" target="_blank" class="btn-whatsapp">Tanya Harga Woven via WhatsApp &rarr;</a>
+				</div>
+			</article>
+		</section>
+
+		<section class="technical-seo">
+			<h2>Dokumen Uji Tes (Test Report Laboratorium)</h2>
+			<p>Komitmen tinggi terhadap keamanan infrastruktur: Kualitas <em>Tensile</em> material kami secara berkala di bawa ke balai pengujian bersertifikasi Nasional untuk memastikan daya robek (Tear) dan Puncture Resistance selalu sesuai standar SNI / ASTM yang berlaku global. <strong>Jaminan garansi lulus uji lapangan.</strong></p>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	/* Breadcrumb styling: Menguatkan Navigasi Web */
+	.breadcrumb-container {
+		background-color: var(--white);
+		padding: 15px 0;
+		border-bottom: 1px solid #eaeaea;
+		font-size: 0.95rem;
+	}
+	.breadcrumbs {
+		display: flex;
+		list-style: none;
+		gap: 12px;
+		color: #666;
+	}
+	.breadcrumbs a {
+		text-decoration: none;
+		color: var(--primary-color);
+		font-weight: 600;
+	}
+	.breadcrumbs .active {
+		color: #999;
+	}
+
+	/* Page Header H1 */
+	.page-header {
+		background-color: #fafbfc;
+		padding: 70px 0;
+		text-align: center;
+		border-bottom: 4px solid var(--primary-color);
+	}
+	.page-header h1 {
+		color: var(--primary-color);
+		font-size: 3rem;
+		margin-bottom: 15px;
+		letter-spacing: -1px;
+	}
+	.subtitle {
+		font-size: 1.25rem;
+		color: #555;
+		max-width: 850px;
+		margin: 0 auto;
+		line-height: 1.7;
+	}
+
+	/* Content Styling */
+	.content {
+		padding: 70px 20px;
+	}
+	.content h2 {
+		color: var(--primary-color);
+		font-size: 2.2rem;
+		margin-bottom: 25px;
+		letter-spacing: -0.5px;
+	}
+	.overview {
+		margin-bottom: 60px;
+	}
+	.overview p, .technical-seo p {
+		font-size: 1.15rem;
+		color: #444;
+	}
+
+	/* Product List (Card style) */
+	.products-list {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		margin-bottom: 70px;
+	}
+	.product-item {
+		background: var(--white);
+		padding: 45px;
+		border-radius: 12px;
+		box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+		border-left: 8px solid var(--secondary-color);
+		display: flex;
+		align-items: center;
+	}
+	.product-text h3 {
+		font-size: 1.8rem;
+		color: var(--primary-color);
+		margin-bottom: 15px;
+	}
+	.product-text p {
+		font-size: 1.1rem;
+		margin-bottom: 20px;
+		color: #555;
+	}
+	.product-text ul {
+		margin-left: 25px;
+		margin-bottom: 30px;
+		color: #444;
+	}
+	.product-text li {
+		margin-bottom: 8px;
+		font-size: 1.1rem;
+	}
+	
+	/* Button WhatsApp konversi CTA */
+	.btn-whatsapp {
+		display: inline-block;
+		background-color: #25D366; 
+		color: white;
+		padding: 15px 30px;
+		border-radius: 8px;
+		font-weight: 700;
+		font-size: 1.1rem;
+		text-decoration: none;
+		transition: background-color 0.3s, transform 0.2s;
+	}
+	.btn-whatsapp:hover {
+		background-color: #128C7E;
+		transform: translateY(-2px);
+	}
+
+	@media (max-width: 768px) {
+		.page-header h1 {
+			font-size: 2.3rem;
+		}
+		.product-item {
+			padding: 25px;
+			border-left: 5px solid var(--secondary-color);
+		}
+	}
+</style>

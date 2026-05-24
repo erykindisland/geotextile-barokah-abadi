@@ -1,0 +1,540 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
+
+// JSON-LD untuk SEO Local & Organization
+const schemaMarkup = {
+	"@context": "https://schema.org",
+	"@type": "Organization",
+	name: "Geotextile Barokah Abadi",
+	url: "https://geotex.barokahabadi.web.id",
+	contactPoint: {
+		"@type": "ContactPoint",
+		telephone: "+62-888-1211-529",
+		contactType: "sales",
+		areaServed: "ID",
+		availableLanguage: "Indonesian",
+	},
+	description:
+		"Distributor Utama Geotextile Woven, Non Woven, Geomembrane, Geogrid, dan Geobag terbesar di Indonesia. Harga pabrik standar SNI.",
+};
+
+// Coba mengambil beberapa produk terbaru/unggulan dari Markdown untuk ditampilkan di HomePage
+const semuaProduk = await getCollection("produk");
+// Ambil 3 produk teratas saja untuk Highlight di Beranda
+const highlightProducts = semuaProduk.slice(0, 3);
+---
+
+<Layout
+	title="Pabrik & Distributor Geotextile Indonesia | Geotextile Barokah Abadi"
+	description="Pusat distributor material geosintetik termurah: Geotextile Non Woven, Woven, Geomembrane HDPE, Geogrid Biaxial standar SNI siap kirim dari pabrik."
+>
+	<!-- Menerapkan Schema JSON-LD -->
+	<script type="application/ld+json" set:html={JSON.stringify(schemaMarkup)}
+	></script>
+
+	<section class="hero">
+		<div class="hero-slider">
+			<div class="slide slide-1"></div>
+			<div class="slide slide-2"></div>
+			<div class="slide slide-3"></div>
+			<div class="slide slide-4"></div>
+		</div>
+
+		<div class="container hero-content">
+			<div class="badge">🔥 Distributor Tangan Pertama</div>
+			<h1>
+				Solusi <span class="text-accent">Geosintetik</span> Tangguh Kelas
+				Proyek Nasional
+			</h1>
+			<p>
+				Pusat grosir material berkualitas tinggi: Geotextile
+				Woven/Non-Woven, Geomembrane HDPE, dan Geogrid. Standar Bina
+				Marga & SNI dengan harga pabrik langsung.
+			</p>
+
+			<div class="hero-actions">
+				<a
+					href="https://wa.me/628881211529?text=Halo%20Geotextile%20Barokah%20Abadi,%20saya%20ingin%20tanya%20harga%20terbaik%20untuk%20proyek%20saya"
+					target="_blank"
+					class="cta-button primary-cta"
+				>
+					Dapatkan Penawaran Harga &rarr;
+				</a>
+				<a href="#katalog-unggulan" class="cta-button secondary-cta"
+					>Eksplor Produk</a
+				>
+			</div>
+		</div>
+	</section>
+
+	<!-- TRUST FACTORS SECTION -->
+	<section class="trust-factors">
+		<div class="container">
+			<div class="trust-grid">
+				<div class="trust-item">
+					<div class="icon">🥇</div>
+					<h3>Standar SNI & ISO</h3>
+					<p>
+						Lulus uji tarik (Tensile) & tusuk laboratorium
+						terakreditasi.
+					</p>
+				</div>
+				<div class="trust-item">
+					<div class="icon">🏭</div>
+					<h3>Harga Tangan Pertama</h3>
+					<p>
+						Jaminan harga pabrik grosir untuk menekan RAB proyek
+						Anda.
+					</p>
+				</div>
+				<div class="trust-item">
+					<div class="icon">🚚</div>
+					<h3>Pengiriman Cepat</h3>
+					<p>
+						Armada logistik teruji. Siap kirim ke pelosok Nusantara.
+					</p>
+				</div>
+				<div class="trust-item">
+					<div class="icon">🤝</div>
+					<h3>Konsultasi Engineer</h3>
+					<p>
+						Gratis panduan teknis pemasangan dari tenaga ahli kami.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- HIGHLIGHT PRODUK DINAMIS (KGR) -->
+	<section class="highlight-products" id="katalog-unggulan">
+		<div class="container">
+			<h2 class="section-title">Katalog Produk Unggulan</h2>
+			<p class="section-subtitle">
+				Material geosintetik berkualitas tinggi untuk kebutuhan
+				konstruksi Anda.
+			</p>
+
+			<div class="grid">
+				{
+					highlightProducts.map((produk: any) => (
+						<article class="product-card">
+							<div class="card-image-wrapper">
+								{produk.data.image && (
+									<Image
+										src={produk.data.image}
+										alt={produk.data.title}
+										width={400}
+										height={250}
+										format="webp"
+										class="card-image"
+									/>
+								)}
+							</div>
+							<div class="card-content">
+								<h3>{produk.data.title}</h3>
+								<p>{produk.data.description}</p>
+								<a
+									href={`/produk/${produk.id}`}
+									class="link-more"
+								>
+									Spek Lengkap & Detail &rarr;
+								</a>
+							</div>
+						</article>
+					))
+				}
+			</div>
+
+			<div style="text-align: center; margin-top: 60px;">
+				<a href="/produk" class="cta-button primary-cta"
+					>Lihat Semua Produk &rarr;</a
+				>
+			</div>
+		</div>
+	</section>
+
+	<!-- NATIONAL REACH SECTION -->
+	<section class="national-reach">
+		<div class="container">
+			<div class="reach-flex">
+				<div class="reach-text">
+					<h2>
+						Siap Kirim ke <span class="text-accent"
+							>Seluruh Indonesia</span
+						>
+					</h2>
+					<p>
+						Geotextile Barokah Abadi memiliki jaringan distribusi
+						luas untuk mensuplai proyek infrastruktur strategis
+						nasional di berbagai titik:
+					</p>
+					<ul class="location-list">
+						<li>
+							<strong>Proyek IKN:</strong> Balikpapan, Penajam Paser
+							Utara, Samarinda.
+						</li>
+						<li>
+							<strong>Trans Sumatera:</strong> Lampung, Palembang,
+							Medan, Pekanbaru.
+						</li>
+						<li>
+							<strong>Jawa & Bali:</strong> Jakarta, Tangerang, Bandung,
+							Semarang, Surabaya, Denpasar.
+						</li>
+						<li>
+							<strong>Sulawesi & Timur:</strong> Makassar, Manado,
+							hingga Jayapura.
+						</li>
+					</ul>
+				</div>
+				<div class="reach-stats">
+					<div class="stat-card">
+						<div class="stat-num">500+</div>
+						<div class="stat-label">Proyek Selesai</div>
+					</div>
+					<div class="stat-card">
+						<div class="stat-num">24/7</div>
+						<div class="stat-label">Dukungan Teknis</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	/* Styling Hero dengan Slider Gambar */
+	.hero {
+		position: relative;
+		min-height: 90vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		color: var(--white);
+		overflow: hidden;
+	}
+	.hero-slider {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -2;
+	}
+	.slide {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+		opacity: 0;
+		animation: zoomAndFade4 40s infinite linear;
+		filter: brightness(0.5);
+	}
+	.slide-1 {
+		background-image: url("/distributor-geotextile-woven-proyek-nasional.png");
+		animation-delay: 0s;
+	}
+	.slide-2 {
+		background-image: url("/supplier-geomembrane-hdpe-indonesia.png");
+		animation-delay: 10s;
+	}
+	.slide-3 {
+		background-image: url("/distributor-geogrid-biaxial-perkuatan-tanah.png");
+		animation-delay: 20s;
+	}
+	.slide-4 {
+		background-image: url("/supplier-drainage-cell-sistem-drainase.png");
+		animation-delay: 30s;
+	}
+	
+	@keyframes zoomAndFade4 {
+		0% {
+			opacity: 0;
+			transform: scale(1);
+		}
+		2.5% {
+			opacity: 1;
+		}
+		22.5% {
+			opacity: 1;
+		}
+		25% {
+			opacity: 0;
+			transform: scale(1.1);
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+
+	.hero::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(
+			135deg,
+			rgba(6, 78, 59, 0.4),
+			rgba(15, 23, 42, 0.6)
+		);
+		z-index: -1;
+	}
+
+	.hero-content {
+		position: relative;
+		z-index: 10;
+		animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+	}
+	.badge {
+		background: var(--secondary);
+		color: #000;
+		display: inline-block;
+		padding: 6px 16px;
+		border-radius: 50px;
+		font-weight: 700;
+		font-size: 0.9rem;
+		margin-bottom: 20px;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+	}
+	.hero-content h1 {
+		font-size: 4rem;
+		margin-bottom: 25px;
+		line-height: 1.1;
+		font-weight: 700;
+	}
+	.text-accent {
+		color: var(--secondary);
+	}
+	.hero-content p {
+		font-size: 1.3rem;
+		max-width: 800px;
+		margin: 0 auto 45px auto;
+		opacity: 0.9;
+		font-weight: 400;
+	}
+
+	.hero-actions {
+		display: flex;
+		gap: 20px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.cta-button {
+		display: inline-block;
+		padding: 20px 40px;
+		border-radius: 50px;
+		font-weight: 700;
+		font-size: 1.1rem;
+		text-decoration: none;
+		transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	}
+	.primary-cta {
+		background-color: var(--primary);
+		color: white;
+		box-shadow: 0 10px 20px rgba(6, 78, 59, 0.4);
+	}
+	.primary-cta:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 15px 30px rgba(6, 78, 59, 0.6);
+		background-color: #042f24;
+	}
+	.secondary-cta {
+		background-color: rgba(255, 255, 255, 0.1);
+		color: var(--white);
+		backdrop-filter: blur(5px);
+		border: 1px solid rgba(255, 255, 255, 0.3);
+	}
+	.secondary-cta:hover {
+		background-color: var(--white);
+		color: var(--primary);
+		transform: translateY(-5px);
+	}
+
+	/* Trust Factors */
+	.trust-factors {
+		padding: 40px 0;
+		background: var(--white);
+		margin-top: -60px;
+		position: relative;
+		z-index: 100;
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 100px;
+		box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+	}
+	.trust-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 20px;
+		text-align: center;
+	}
+	.trust-item .icon {
+		font-size: 2rem;
+		margin-bottom: 5px;
+	}
+	.trust-item h3 {
+		font-size: 1rem;
+		color: var(--primary);
+		margin-bottom: 5px;
+	}
+	.trust-item p {
+		font-size: 0.85rem;
+		color: var(--text-muted);
+	}
+
+	/* Highlight Products */
+	.highlight-products {
+		padding: 120px 0;
+	}
+	.section-title {
+		text-align: center;
+		font-size: 2.8rem;
+		margin-bottom: 15px;
+		color: var(--primary);
+		font-weight: 700;
+	}
+	.section-subtitle {
+		text-align: center;
+		color: var(--text-muted);
+		font-size: 1.15rem;
+		margin-bottom: 60px;
+	}
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 40px;
+	}
+	.product-card {
+		background: var(--white);
+		border-radius: 24px;
+		overflow: hidden;
+		box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+		transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+		border: 1px solid rgba(0, 0, 0, 0.05);
+	}
+	.product-card:hover {
+		transform: translateY(-12px);
+		box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+	}
+	.card-image-wrapper {
+		position: relative;
+		overflow: hidden;
+	}
+	.card-image {
+		width: 100%;
+		height: 250px;
+		object-fit: cover;
+		transition: transform 0.6s ease;
+	}
+	.product-card:hover .card-image {
+		transform: scale(1.1);
+	}
+	.card-content {
+		padding: 30px;
+	}
+	.link-more {
+		text-decoration: none;
+		color: var(--primary);
+		font-weight: 700;
+		font-size: 1rem;
+		display: inline-flex;
+		align-items: center;
+		gap: 10px;
+		transition: transform 0.3s;
+	}
+	.link-more:hover {
+		transform: translateX(5px);
+		color: var(--accent);
+	}
+
+	/* National Reach Section */
+	.national-reach {
+		background: #f8fafc;
+		padding: 100px 0;
+	}
+	.reach-flex {
+		display: flex;
+		align-items: center;
+		gap: 80px;
+	}
+	.reach-text {
+		flex: 1.5;
+	}
+	.reach-text h2 {
+		font-size: 2.8rem;
+		margin-bottom: 25px;
+		color: var(--primary);
+	}
+	.location-list {
+		list-style: none;
+		margin-top: 30px;
+	}
+	.location-list li {
+		margin-bottom: 15px;
+		font-size: 1.1rem;
+		padding-left: 30px;
+		position: relative;
+	}
+	.location-list li::before {
+		content: "📍";
+		position: absolute;
+		left: 0;
+	}
+	.reach-stats {
+		flex: 1;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 25px;
+	}
+	.stat-card {
+		background: var(--white);
+		padding: 40px;
+		border-radius: 30px;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+		text-align: center;
+		border: 1px solid #f1f5f9;
+	}
+	.stat-num {
+		font-size: 3rem;
+		font-weight: 800;
+		color: var(--primary);
+		font-family: "Outfit", sans-serif;
+	}
+	.stat-label {
+		color: var(--text-muted);
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+	/* Responsiveness */
+	@media (max-width: 992px) {
+		.reach-flex {
+			flex-direction: column;
+			gap: 50px;
+		}
+		.reach-text h2 {
+			font-size: 2.2rem;
+		}
+		.reach-stats {
+			width: 100%;
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+	@media (max-width: 768px) {
+		.reach-stats {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
