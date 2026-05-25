@@ -5,10 +5,16 @@ import sitemap from '@astrojs/sitemap';
 
 import cloudflare from '@astrojs/cloudflare';
 
+import { passthroughImageService } from 'astro/config';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://geotex.barokahabadi.web.id',
   compressHTML: true,
   integrations: [sitemap()],
-  adapter: cloudflare()
-});
+  adapter: cloudflare(),
+  image: {
+    service: passthroughImageService()
+  }
+});
+
