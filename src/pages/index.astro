@@ -34,50 +34,66 @@ const highlightProducts = semuaProduk.slice(0, 3);
 	<script type="application/ld+json" set:html={JSON.stringify(schemaMarkup)}
 	></script>
 
-	<section class="hero" aria-label="Hero slider showcasing geotextile solutions">
+	<section
+		class="hero"
+		aria-label="Hero slider showcasing geotextile solutions"
+	>
 		<div class="hero-slider">
 			<!-- Slide 1 – eager load -->
 			<div class="slide slide-1">
-				<Image src="/hero/geotextile-woven-project-national.webp"
+				<Image
+					src="/hero/geotextile-woven-project-national.webp"
 					alt="Geotextile woven project national"
-					width={1920} height={1080}
+					width={1920}
+					height={1080}
 					loading="eager"
-					class="slide-img" />
+					class="slide-img"
+				/>
 			</div>
 
 			<!-- Slide 2 – lazy -->
 			<div class="slide slide-2">
-				<Image src="/hero/geomembrane-hdpe.webp"
+				<Image
+					src="/hero/geomembrane-hdpe.webp"
 					alt="Geomembrane HDPE"
-					width={1920} height={1080}
+					width={1920}
+					height={1080}
 					loading="lazy"
-					class="slide-img" />
+					class="slide-img"
+				/>
 			</div>
 
 			<!-- Slide 3 – lazy -->
 			<div class="slide slide-3">
-				<Image src="/hero/geogrid-biaxial.webp"
+				<Image
+					src="/hero/geogrid-biaxial.webp"
 					alt="Geogrid biaxial"
-					width={1920} height={1080}
+					width={1920}
+					height={1080}
 					loading="lazy"
-					class="slide-img" />
+					class="slide-img"
+				/>
 			</div>
 
 			<!-- Slide 4 – lazy -->
 			<div class="slide slide-4">
-				<Image src="/hero/innovative-construction.webp"
+				<Image
+					src="/hero/innovative-construction.webp"
 					alt="Innovative construction"
-					width={1920} height={1080}
+					width={1920}
+					height={1080}
 					loading="lazy"
-					class="slide-img" />
+					class="slide-img"
+				/>
 			</div>
 		</div>
 
 		<div class="container hero-content">
 			<div class="badge">🔥 Distributor Tangan Pertama</div>
 			<h1>
-				Solusi <span class="text-accent">Geosintetik</span> Tangguh Kelas
-				Proyek Nasional
+				Solusi <span class="text-accent">Geosintetik</span> Tangguh<br
+				/>
+				Proyek Kelas Nasional
 			</h1>
 			<p>
 				Pusat grosir material berkualitas tinggi: Geotextile
@@ -293,8 +309,6 @@ const highlightProducts = semuaProduk.slice(0, 3);
 		animation-delay: 30s;
 	}
 
-
-	
 	@keyframes zoomAndFade4 {
 		0% {
 			opacity: 0;
