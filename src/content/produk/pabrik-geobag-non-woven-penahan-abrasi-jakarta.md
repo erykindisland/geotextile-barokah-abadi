@@ -4,7 +4,7 @@ description: "Beli geobag penahan abrasi pantai Bali harga grosir pabrik. Jual g
 priceLow: 45000
 priceHigh: 120000
 seoKeyword: "beli geobag penahan abrasi pantai bali"
-image: "../../assets/images/geobag.webp"
+image: "https://www.primageotex.co.id/files/geobag/jual%20geobag%20murah.jpg"
 category: "Geosynthetics"
 ---
 

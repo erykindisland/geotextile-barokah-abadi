@@ -4,7 +4,7 @@ description: "Harga pipa corrugated geopipe drainase Bandung 2024 murah. Distrib
 priceLow: 55000
 priceHigh: 185000
 seoKeyword: "harga pipa corrugated geopipe bandung"
-image: "../../assets/images/geopipe.webp"
+image: "https://www.primageotex.co.id/files/Geopipe/harga%20geopipe.jpg"
 category: "Geosynthetics"
 ---
 

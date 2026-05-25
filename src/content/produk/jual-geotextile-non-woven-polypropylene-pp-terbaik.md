@@ -4,7 +4,7 @@ description: "Jual geotextile non woven polypropylene (PP) kualitas terbaik. Dis
 priceLow: 12500
 priceHigh: 22500
 seoKeyword: "jual geotextile non woven polypropylene pp"
-image: "../../assets/images/hero-bg.webp"
+image: "https://www.primageotex.co.id/files/Polypropylene/Geotextile%20Non%20Woven%20Polypropylene%20terbaik.jpg"
 category: "Geotextile"
 ---
 

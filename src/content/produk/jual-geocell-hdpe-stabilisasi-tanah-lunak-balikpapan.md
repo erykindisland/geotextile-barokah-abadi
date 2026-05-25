@@ -4,7 +4,7 @@ description: "Jual Geocell HDPE untuk stabilisasi tanah lunak Kalimantan (IKN). 
 priceLow: 125000
 priceHigh: 185000
 seoKeyword: "jual geocell kalimantan stabilisasi tanah"
-image: "../../assets/images/geocell.webp"
+image: "https://www.primageotex.co.id/files/Geocell/jual%20geocell.jpg"
 category: "Geosynthetics"
 ---
 
