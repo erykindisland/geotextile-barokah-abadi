@@ -4,7 +4,7 @@ description: "Harga jual geogrid biaxial 40kN termurah di Semarang untuk stabili
 priceLow: 24500
 priceHigh: 32000
 seoKeyword: "jual geogrid biaxial semarang"
-image: "https://www.primageotex.co.id/files/Geogrid/harga%20geogrid%20biaxial%20pp.jpg"
+image: "../../assets/images/geogrid.webp"
 category: "Geosynthetics"
 ---
 

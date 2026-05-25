@@ -4,7 +4,7 @@ description: "Supplier geomembrane HDPE 0.5 mm harga pabrik Surabaya. Jual geome
 priceLow: 15500
 priceHigh: 19500
 seoKeyword: "supplier geomembrane hdpe 0.5 mm surabaya"
-image: "https://www.primageotex.co.id/files/geomembrane/harga%20geomembrane.jpg"
+image: "../../assets/images/geomembrane.webp"
 category: "Geomembrane"
 ---
 

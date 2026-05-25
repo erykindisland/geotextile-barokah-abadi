@@ -4,7 +4,7 @@ description: "Distributor geotextile woven circular tangan pertama Tangerang. Ju
 priceLow: 6500
 priceHigh: 9500
 seoKeyword: "distributor geotextile woven circular tangerang"
-image: "https://www.primageotex.co.id/files/Woven%20Circular/harga%20geotextile%20woven%20circular.jpg"
+image: "../../assets/images/hero-bg.webp"
 category: "Geotextile"
 ---
 

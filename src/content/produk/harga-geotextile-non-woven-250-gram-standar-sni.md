@@ -4,7 +4,7 @@ description: "Dapatkan harga geotextile non woven 250 gr per roll 2024 termurah 
 priceLow: 8500
 priceHigh: 12500
 seoKeyword: "harga geotextile non woven 250 gr per roll 2024"
-image: "https://www.primageotex.co.id/files/Polyester/jual%20Geotextile%20Non%20Woven%20PET.jpg"
+image: "../../assets/images/hero-bg.webp"
 category: "Geotextile"
 ---
 
