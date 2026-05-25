@@ -40,7 +40,7 @@ Berdasarkan standar industri (ASTM), berikut adalah nilai teknis rata-rata untuk
 
 Harga material geotextile bersifat fluktuatif mengikuti harga bahan baku polimer dunia. Dapatkan penawaran **harga geotextile non woven 250 gr per roll 2024** terbaik untuk kebutuhan proyek Anda.
 
-> **[Chat Sales Engineer (WhatsApp)](https://wa.me/628881211529?text=Halo%20Geotextile Barokah Abadi,%20saya%20butuh%20harga%20Geotextile%20Non%20Woven%20250gr%20SNI)**
+> [Hubungi via WhatsApp](https://wa.me/628881211529?text=Halo%20Geotextile%20Barokah%20Abadi,%20saya%20tertarik%20dengan%20produk%20Geotextile%20Non%20Woven)
 
 ---
 *Geotextile Barokah Abadi - Solusi Geosintetik Terpercaya dan Berkualitas.*

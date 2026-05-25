@@ -33,7 +33,7 @@ Geobag kami dibuat menggunakan kain Geotextile Non Woven PET/PP dengan gramasi t
 *   **Jakarta & Pulau Seribu:** Penyekat arus pada proyek reklamasi dan tanggul pantai utara.
 *   **Normalisasi Sungai:** Memperkuat bantaran sungai dari gerusan arus banjir deras.
 
-> **[Klik WhatsApp: Pesan Geobag Harga Grosir](https://wa.me/628881211529?text=Halo%20Geotextile Barokah Abadi,%20saya%20butuh%20info%20Beli%20Geobag%20Bali)**
+> [Hubungi via WhatsApp](https://wa.me/628881211529?text=Halo%20Geotextile%20Barokah%20Abadi,%20saya%20tertarik%20dengan%20produk%20Geobag)
 
 ---
 *Geotextile Barokah Abadi - Solusi Perlindungan Pantai Terdepan.*

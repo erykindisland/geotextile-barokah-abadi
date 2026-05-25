@@ -33,7 +33,7 @@ Geocell adalah sistem pengungkung tiga dimensi (*Three-dimensional Cellular Conf
 ## Project Showcase di Kalimantan
 Material Geocell kami telah banyak diaplikasikan pada proyek jalan tambang, perkuatan bahu jalan provinsi, dan lansekap area perkantoran di Balikpapan dan Samarinda. Dapatkan **harga geocell per m2** paling kompetitif untuk volume besar.
 
-> **[Pesan Geocell Sekarang (WhatsApp)](https://wa.me/628881211529?text=Halo%20Geotextile Barokah Abadi,%20saya%20butuh%20Geocell%20untuk%20proyek%20Kalimantan)**
+> [Hubungi via WhatsApp](https://wa.me/628881211529?text=Halo%20Geotextile%20Barokah%20Abadi,%20saya%20tertarik%20dengan%20produk%20Geocell)
 
 ---
 *Geotextile Barokah Abadi - Membangun Fondasi Kokoh di Atas Tanah Labil.*

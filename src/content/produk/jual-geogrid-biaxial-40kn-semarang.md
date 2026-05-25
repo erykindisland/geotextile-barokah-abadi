@@ -34,7 +34,7 @@ Geogrid Biaxial bekerja dengan prinsip *interlocking*. Saat material timbunan (a
 ## Distributor Area Jawa Tengah
 Kami melayani pengiriman satu hari (*Next Day*) untuk wilayah Semarang, Kendal, Demak, hingga Solo dan Yogyakarta. Dapatkan **harga geogrid biaxial** paling kompetitif langsung dari gudang pusat kami.
 
-> **[Pesan Geogrid Biaxial 40kN Sekarang (WhatsApp)](https://wa.me/628881211529?text=Halo%20Geotextile Barokah Abadi,%20saya%20tertarik%20dengan%20Geogrid%20Biaxial%2040kN%20Semarang)**
+> [Hubungi via WhatsApp](https://wa.me/628881211529?text=Halo%20Geotextile%20Barokah%20Abadi,%20saya%20tertarik%20dengan%20produk%20Geogrid%20Biaxial)
 
 ---
 *Geotextile Barokah Abadi - Solusi Inovatif untuk Fondasi Jalan yang Lebih Kuat.*

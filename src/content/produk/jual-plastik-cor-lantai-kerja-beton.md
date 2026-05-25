@@ -35,7 +35,7 @@ Kami menyediakan dua varian utama yang sering digunakan dalam proyek infrastrukt
 ## Area Distribusi Cepat
 Kami melayani pengiriman grosir untuk wilayah Jakarta, Tangerang, Bekasi, hingga proyek pembangunan di IKN dan Sumatera. Dapatkan **harga plastik cor per roll** paling bersaing untuk pengambilan partai besar.
 
-> **[Hubungi Kami: Cek Stok & Harga Plastik Cor (WA)](https://wa.me/628881211529?text=Halo%20Geotextile Barokah Abadi,%20saya%20butuh%20info%20Plastik%20Cor%20per%20Roll)**
+> [Hubungi via WhatsApp](https://wa.me/628881211529?text=Halo%20Geotextile%20Barokah%20Abadi,%20saya%20tertarik%20dengan%20produk%20Plastik%20Cor)
 
 ---
 *Geotextile Barokah Abadi - Solusi Material Pendukung Konstruksi yang Andal.*

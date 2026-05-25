@@ -39,7 +39,7 @@ Kami juga menyediakan **Geotextile Non Woven Continuous Filament** (Brand: **Pri
 *   **Perkuatan Jalan Lahan Gambut:** Menjaga integritas timbunan jalan di tanah yang asam.
 *   **Sistem Drainase Tambang:** Menahan partikel halus namun tetap mengalirkan air limbah tambang.
 
-> **[Hubungi Kami: Penawaran Harga Geotextile PP (WhatsApp)](https://wa.me/628881211529?text=Halo%20Geotextile Barokah Abadi,%20saya%20butuh%20info%20Geotextile%20Non%20Woven%20PP)**
+> [Hubungi via WhatsApp](https://wa.me/628881211529?text=Halo%20Geotextile%20Barokah%20Abadi,%20saya%20tertarik%20dengan%20produk%20Geotextile%20PP)
 
 ---
 *Geotextile Barokah Abadi - Spesialis Material Geosintetik Tahan Lama.*

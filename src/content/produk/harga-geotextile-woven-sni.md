@@ -36,7 +36,7 @@ Geotextile Woven adalah lembaran geosintetik yang diproduksi dengan cara mengany
 *   **Akses Jalan Kerja Tambang:** Memastikan mobilitas alat berat di lokasi proyek tetap lancar.
 *   **Tanggul & Reklamasi:** Sebagai pemisah lapis tanah dasar dan material timbunan pada struktur bendungan.
 
-> **[Hubungi Kami: Penawaran Harga Geotextile Woven Tangerang](https://wa.me/628881211529?text=Halo%20Geotextile Barokah Abadi,%20saya%20tertarik%20dengan%20Geotextile%20Woven%20Circular)**
+> [Hubungi via WhatsApp](https://wa.me/628881211529?text=Halo%20Geotextile%20Barokah%20Abadi,%20saya%20tertarik%20dengan%20produk%20Geotextile%20Woven)
 
 ---
 *Geotextile Barokah Abadi - Rekanan Terpercaya Proyek Geosintetik Anda.*

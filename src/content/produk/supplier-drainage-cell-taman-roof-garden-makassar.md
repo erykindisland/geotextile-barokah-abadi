@@ -36,7 +36,7 @@ Sistem panel interkoneksi ini memberikan rongga udara di bawah tanah media tanam
 *   **Lapangan Bola & Golf:** Memastikan lapangan tetap kering dan dapat digunakan segera setelah hujan deras.
 *   **Basement & Dinding Penahan:** Mengurangi tekanan hidrostatik pada dinding bawah tanah.
 
-> **[Hubungi Kami: Dapatkan Harga Drainage Cell Per m2 Jakarta (WA)](https://wa.me/628881211529?text=Halo%20Geotextile Barokah Abadi,%20saya%20butuh%20info%20Drainage%20Cell%20Jakarta)**
+> [Hubungi via WhatsApp](https://wa.me/628881211529?text=Halo%20Geotextile%20Barokah%20Abadi,%20saya%20tertarik%20dengan%20produk%20Drainage%20Cell)
 
 ---
 *Geotextile Barokah Abadi - Solusi Cerdas Sistem Drainase Modern.*

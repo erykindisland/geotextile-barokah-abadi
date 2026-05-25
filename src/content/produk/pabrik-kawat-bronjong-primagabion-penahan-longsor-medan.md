@@ -31,7 +31,7 @@ Kawat Bronjong (Gabion) kami diproduksi menggunakan kawat baja karbon rendah yan
 ## Target Lokasi & Distribusi (IKN)
 Sebagai mitra strategis pembangunan **IKN (Balikpapan/Samarinda)**, kami memiliki stok melimpah untuk mendukung proyek infrastruktur jalan dan normalisasi sungai di Kalimantan. Kami juga melayani pengiriman ke Medan, Palembang, dan seluruh wilayah Sumatera.
 
-> **[Cek Daftar Harga Kawat Bronjong Per m3 via WhatsApp](https://wa.me/628881211529?text=Halo%20Geotextile Barokah Abadi,%20saya%20butuh%20harga%20Kawat%20Bronjong%20SNI%20IKN)**
+> [Hubungi via WhatsApp](https://wa.me/628881211529?text=Halo%20Geotextile%20Barokah%20Abadi,%20saya%20tertarik%20dengan%20produk%20Kawat%20Bronjong)
 
 ---
 *Geotextile Barokah Abadi - Solusi Kokoh Penahan Longsor dan Erosi.*

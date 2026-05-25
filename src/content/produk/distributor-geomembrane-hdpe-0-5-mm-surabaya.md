@@ -35,7 +35,7 @@ Geomembrane merupakan material lembaran kedap air yang sangat efektif menggantik
 ## Mengapa Pilih Geotextile Barokah Abadi?
 Kami menyediakan layanan pengadaan **harga geomembrane per m2** terbaik untuk proyek di Lampung, Surabaya, hingga ke pelosok Sumatera. Siap kirim cepat dengan armada sendiri atau ekspedisi terpercaya.
 
-> **[Tanya Harga Geomembrane HDPE 0.5 mm Surabaya (WA)](https://wa.me/628881211529?text=Halo%20Geotextile Barokah Abadi,%20saya%20butuh%20Gomembrane%200.5mm%20Surabaya)**
+> [Hubungi via WhatsApp](https://wa.me/628881211529?text=Halo%20Geotextile%20Barokah%20Abadi,%20saya%20tertarik%20dengan%20produk%20Geomembrane)
 
 ---
 *Geotextile Barokah Abadi - Ahli Solusi Kedap Air dan Geosintetik.*

@@ -36,7 +36,7 @@ Pipa ini memiliki profil bergelombang (*corrugated*) yang memberikan rasio kekua
 *   **Sistem Drainase Dinding Penahan:** Mencegah akumulasi air di belakang dinding penahan tanah lereng.
 *   **Proyek Jalan & Infrastruktur:** Penyalur aliran air limbah atau hujan di bawah jalan.
 
-> **[Klik WhatsApp: Cek Harga Geopipe Bandung Terbaru](https://wa.me/628881211529?text=Halo%20Geotextile Barokah Abadi,%20saya%20butuh%20info%20Geopipe%20Bandung)**
+> [Hubungi via WhatsApp](https://wa.me/628881211529?text=Halo%20Geotextile%20Barokah%20Abadi,%20saya%20tertarik%20dengan%20produk%20Geopipe)
 
 ---
 *Geotextile Barokah Abadi - Solusi Aliran Air Bawah Tanah yang Andal.*
