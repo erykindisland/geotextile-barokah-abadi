@@ -34,12 +34,13 @@ const highlightProducts = semuaProduk.slice(0, 3);
 	<script type="application/ld+json" set:html={JSON.stringify(schemaMarkup)}
 	></script>
 
-	<section class="hero">
+	<section class="hero" aria-label="Hero slider showcasing geotextile solutions">
 		<div class="hero-slider">
 			<div class="slide slide-1"></div>
 			<div class="slide slide-2"></div>
 			<div class="slide slide-3"></div>
 			<div class="slide slide-4"></div>
+			<div class="slide slide-5"></div>
 		</div>
 
 		<div class="container hero-content">
@@ -233,7 +234,7 @@ const highlightProducts = semuaProduk.slice(0, 3);
 		background-size: cover;
 		background-position: center;
 		opacity: 0;
-		animation: zoomAndFade4 40s infinite linear;
+		animation: zoomAndFade5 50s infinite linear;
 		filter: brightness(0.5);
 	}
 	.slide-1 {
@@ -251,6 +252,24 @@ const highlightProducts = semuaProduk.slice(0, 3);
 	.slide-4 {
 		background-image: url("/supplier-drainage-cell-sistem-drainase.png");
 		animation-delay: 30s;
+	}
+	.slide-5 {
+		background-image: url("/hero-new.png");
+		animation-delay: 40s;
+	}
+
+	@keyframes zoomAndFade5 {
+		0% { opacity: 0; transform: scale(1); }
+		2% { opacity: 1; }
+		22% { opacity: 1; }
+		24% { opacity: 0; transform: scale(1.1); }
+		40% { opacity: 0; }
+		42% { opacity: 1; }
+		62% { opacity: 1; }
+		64% { opacity: 0; transform: scale(1.1); }
+		80% { opacity: 0; }
+		82% { opacity: 1; }
+		100% { opacity: 0; transform: scale(1.1); }
 	}
 	
 	@keyframes zoomAndFade4 {

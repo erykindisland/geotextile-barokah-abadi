@@ -15,23 +15,30 @@ const { title, description, canonicalUrl } = Astro.props;
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		
 		<!-- SEO Meta Tags -->
-		<title>{title}</title>
+		<title>{title} | Geotextile Distributor Indonesia – Geotextile Barokah Abadi</title>
 		<meta name="description" content={description} />
+		<meta name="keywords" content="geotextile, geomembrane, geogrid, distributor geotextile indonesia, material geosintetik, geotextile barokah abadi" />
+		<meta name="robots" content="index, follow" />
 		{canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
 		
 		<!-- OpenGraph / Facebook -->
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content={Astro.url} />
-		<meta property="og:title" content={title} />
+		<meta property="og:title" content="{title} | Geotextile Barokah Abadi" />
 		<meta property="og:description" content={description} />
 		<meta property="og:image" content="/og-image.webp" />
+		<meta property="og:site_name" content="Geotextile Barokah Abadi" />
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
 		<meta property="twitter:url" content={Astro.url} />
-		<meta property="twitter:title" content={title} />
+		<meta property="twitter:title" content="{title} | Geotextile Barokah Abadi" />
 		<meta property="twitter:description" content={description} />
 		<meta property="twitter:image" content="/og-image.webp" />
+		<meta property="twitter:site" content="@geotextilebarokah" />
+
+		<!-- Preload hero image for faster LCP -->
+		<link rel="preload" as="image" href="/hero-new.png" />
 
 		<link rel="icon" type="image/webp" href="/favicon.webp" />
 		<link rel="icon" type="image/png" href="/favicon.png" />
