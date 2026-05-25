@@ -54,8 +54,11 @@ const { title, description, canonicalUrl } = Astro.props;
 	<body>
 		<header class="main-header">
 			<div class="container header-inner">
-				<a href="/" class="logo">
-					<span class="logo-accent">Geotextile</span> Barokah Abadi
+				<a href="/" class="logo-group">
+					<div class="logo-brand">
+						<span class="logo-accent">Geotextile</span> Barokah Abadi
+					</div>
+					<div class="logo-tagline">Agregator Material dan Solusi Geosintetik Indonesia</div>
 				</a>
 				<nav class="main-nav">
 					<button class="mobile-menu-toggle" aria-label="Toggle Menu">
@@ -79,8 +82,11 @@ const { title, description, canonicalUrl } = Astro.props;
 		<footer class="main-footer">
 			<div class="container footer-grid">
 				<div class="footer-brand">
-					<div class="footer-logo">
-						<span class="logo-accent">Geotextile</span> Barokah Abadi
+					<div class="logo-group footer-logo-group">
+						<div class="logo-brand">
+							<span class="logo-accent">Geotextile</span> Barokah Abadi
+						</div>
+						<div class="logo-tagline">Agregator Material dan Solusi Geosintetik Indonesia</div>
 					</div>
 					<p>Distributor tangan pertama material geosintetik berkualitas tinggi. Solusi cerdas untuk perkuatan tanah dan sistem drainase proyek nasional.</p>
 				</div>
@@ -174,15 +180,45 @@ const { title, description, canonicalUrl } = Astro.props;
 		justify-content: space-between;
 		align-items: center;
 	}
-	.logo {
-		font-size: 1.6rem;
-		font-weight: 700;
-		color: var(--accent);
+	.logo-group {
+		display: flex;
+		flex-direction: column;
 		text-decoration: none;
+		line-height: 1.1;
+		transition: all 0.3s ease;
+	}
+	.logo-group:hover {
+		transform: translateY(-2px);
+		filter: brightness(1.1);
+	}
+	.logo-brand {
+		font-size: 1.7rem;
+		font-weight: 800;
+		color: #f59e0b; /* Uniform Golden Amber */
+		font-family: 'Outfit', sans-serif;
 		letter-spacing: -0.5px;
+		text-transform: uppercase;
+		text-shadow: 0 2px 4px rgba(0,0,0,0.1);
 	}
 	.logo-accent {
-		color: var(--accent);
+		color: #fbbf24; /* Lighter highlight on the first word */
+	}
+	.logo-tagline {
+		font-size: 0.85rem; /* Larger font size requested */
+		font-weight: 700;
+		color: var(--primary);
+		letter-spacing: 0.2px;
+		text-transform: uppercase;
+		margin-top: 3px;
+		opacity: 0.9;
+		white-space: nowrap;
+	}
+	.footer-logo-group .logo-brand {
+		color: #fbbf24;
+	}
+	.footer-logo-group .logo-tagline {
+		color: var(--white);
+		opacity: 1;
 	}
 
 	.nav-links {
@@ -340,6 +376,14 @@ const { title, description, canonicalUrl } = Astro.props;
 	.floating-wa:hover {
 		transform: scale(1.1);
 		box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+	}
+	@media (max-width: 480px) {
+		.logo-brand {
+			font-size: 1.3rem;
+		}
+		.logo-tagline {
+			font-size: 0.65rem;
+		}
 	}
 	@media (max-width: 768px) {
 		.floating-wa {
