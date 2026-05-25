@@ -7,11 +7,10 @@ import Layout from '../../layouts/Layout.astro';
 export async function getStaticPaths() {
   const produkEntries = await getCollection('produk');
   
-  return produkEntries.map((entry: any) => ({
+  return produkEntries.map(entry => ({
     params: { slug: entry.id }, 
     props: { entry },
   }));
-
 }
 
 const { entry } = Astro.props;
@@ -19,8 +18,7 @@ const { Content } = await render(entry);
 
 // Fetch other products for the sidebar
 const allProducts = await getCollection('produk');
-const otherProducts = allProducts.filter((p: any) => p.id !== entry.id).slice(0, 5);
-
+const otherProducts = allProducts.filter(p => p.id !== entry.id).slice(0, 5);
 
 // SEO Schema
 const schemaMarkup = {
@@ -45,13 +43,8 @@ const schemaMarkup = {
 const waMessage = encodeURIComponent(`Halo Geotextile Barokah, saya tertarik dengan produk ${entry.data.title}. Boleh minta penawaran harganya?`);
 ---
 
-<Layout 
-  title={entry.data.title} 
-  description={entry.data.description}
-  seoKeyword={entry.data.seoKeyword}
->
+<Layout title={entry.data.title} description={entry.data.description}>
   <script type="application/ld+json" set:html={JSON.stringify(schemaMarkup)} />
-
 
   <div class="breadcrumb-bar">
     <div class="container">
@@ -102,7 +95,7 @@ const waMessage = encodeURIComponent(`Halo Geotextile Barokah, saya tertarik den
         <div class="sidebar-widget">
             <h3>Produk Terkait</h3>
             <div class="related-list">
-                {otherProducts.map((prod: any) => (
+                {otherProducts.map(prod => (
                     <a href={`/produk/${prod.id}`} class="related-item">
                         <span class="item-title">{prod.data.title}</span>
                         <span class="item-arrow">&rarr;</span>
