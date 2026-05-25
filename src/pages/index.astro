@@ -36,11 +36,41 @@ const highlightProducts = semuaProduk.slice(0, 3);
 
 	<section class="hero" aria-label="Hero slider showcasing geotextile solutions">
 		<div class="hero-slider">
-			<div class="slide slide-1"></div>
-			<div class="slide slide-2"></div>
-			<div class="slide slide-3"></div>
-			<div class="slide slide-4"></div>
-			<div class="slide slide-5"></div>
+			<!-- Slide 1 – eager load -->
+			<div class="slide slide-1">
+				<Image src="/hero/geotextile-woven-project-national.webp"
+					alt="Geotextile woven project national"
+					width={1920} height={1080}
+					loading="eager"
+					class="slide-img" />
+			</div>
+
+			<!-- Slide 2 – lazy -->
+			<div class="slide slide-2">
+				<Image src="/hero/geomembrane-hdpe.webp"
+					alt="Geomembrane HDPE"
+					width={1920} height={1080}
+					loading="lazy"
+					class="slide-img" />
+			</div>
+
+			<!-- Slide 3 – lazy -->
+			<div class="slide slide-3">
+				<Image src="/hero/geogrid-biaxial.webp"
+					alt="Geogrid biaxial"
+					width={1920} height={1080}
+					loading="lazy"
+					class="slide-img" />
+			</div>
+
+			<!-- Slide 4 – lazy -->
+			<div class="slide slide-4">
+				<Image src="/hero/innovative-construction.webp"
+					alt="Innovative construction"
+					width={1920} height={1080}
+					loading="lazy"
+					class="slide-img" />
+			</div>
 		</div>
 
 		<div class="container hero-content">
@@ -237,20 +267,29 @@ const highlightProducts = semuaProduk.slice(0, 3);
 		animation: zoomAndFade4 40s infinite linear;
 		filter: brightness(0.5);
 	}
+
+	.slide-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
 	.slide-1 {
-		background-image: url("/hero/geotextile-woven-project-national.png");
+		background-image: url("/hero/geotextile-woven-project-national.webp");
 		animation-delay: 0s;
 	}
 	.slide-2 {
-		background-image: url("/hero/geomembrane-hdpe.png");
+		background-image: url("/hero/geomembrane-hdpe.webp");
 		animation-delay: 10s;
 	}
 	.slide-3 {
-		background-image: url("/hero/geogrid-biaxial.png");
+		background-image: url("/hero/geogrid-biaxial.webp");
 		animation-delay: 20s;
 	}
 	.slide-4 {
-		background-image: url("/hero/innovative-construction.png");
+		background-image: url("/hero/innovative-construction.webp");
 		animation-delay: 30s;
 	}
 

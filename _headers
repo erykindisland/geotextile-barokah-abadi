@@ -1,0 +1,15 @@
+/* Cloudflare Pages _headers file for aggressive caching */
+
+# Cache static assets aggressively (images, CSS, JS, fonts, etc.)
+/*
+  Cache-Control: public, max-age=31536000, immutable
+  Edge-Control: max-age=31536000
+*/
+
+# HTML files – short cache, revalidate on each request
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Service worker or other dynamic routes – no cache
+/service-worker.js
+  Cache-Control: no-store
