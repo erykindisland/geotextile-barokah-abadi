@@ -112,6 +112,11 @@ const { title, description, canonicalUrl } = Astro.props;
 		</script>
 	</head>
 	<body>
+		<div class="dev-disclaimer" data-nosnippet>
+			<div class="container">
+				<p><span>🚧</span> Website ini masih dalam tahap perbaikan dan pengembangan.</p>
+			</div>
+		</div>
 		<header class="main-header">
 			<div class="container header-inner">
 				<a href="/" class="logo-group">
@@ -222,6 +227,26 @@ const { title, description, canonicalUrl } = Astro.props;
 		max-width: 1200px;
 		margin: 0 auto;
 		padding: 0 24px;
+	}
+
+	/* Disclaimer Banner */
+	.dev-disclaimer {
+		background: linear-gradient(to right, var(--secondary), var(--accent));
+		color: var(--primary);
+		padding: 6px 0;
+		text-align: center;
+		font-size: 0.8rem;
+		font-weight: 700;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		border-bottom: 1px solid rgba(0,0,0,0.05);
+	}
+	.dev-disclaimer p {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		margin: 0;
 	}
 	
 	/* Header Glassmorphism */
