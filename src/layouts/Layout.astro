@@ -52,6 +52,64 @@ const { title, description, canonicalUrl } = Astro.props;
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+		<!-- JSON-LD Structured Data (Schema.org) for Google AI / SGE -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "LocalBusiness",
+				"name": "Geotextile Barokah Abadi",
+				"alternateName": "Barokah Abadi Geosynthetics",
+				"description": "Distributor tangan pertama material geosintetik berkualitas tinggi: Geotextile, Geomembrane, Geogrid untuk proyek nasional Indonesia.",
+				"url": "https://geotextile.barokahabadi.web.id",
+				"logo": "https://geotextile.barokahabadi.web.id/favicon.png",
+				"image": "https://geotextile.barokahabadi.web.id/og-image.webp",
+				"telephone": "+628881211529",
+				"email": "info@barokahabadi.web.id",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "Tangerang",
+					"addressLocality": "Tangerang",
+					"addressRegion": "Banten",
+					"addressCountry": "ID"
+				},
+				"geo": {
+					"@type": "GeoCoordinates",
+					"latitude": -6.1783,
+					"longitude": 106.6319
+				},
+				"openingHoursSpecification": {
+					"@type": "OpeningHoursSpecification",
+					"dayOfWeek": [
+						"Monday",
+						"Tuesday",
+						"Wednesday",
+						"Thursday",
+						"Friday",
+						"Saturday"
+					],
+					"opens": "08:00",
+					"closes": "17:00"
+				},
+				"sameAs": [
+					"https://wa.me/628881211529"
+				],
+				"priceRange": "$$"
+			}
+		</script>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebSite",
+				"url": "https://geotextile.barokahabadi.web.id",
+				"name": "Geotextile Barokah Abadi",
+				"potentialAction": {
+					"@type": "SearchAction",
+					"target": "https://geotextile.barokahabadi.web.id/produk?q={search_term_string}",
+					"query-input": "required name=search_term_string"
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<header class="main-header">
