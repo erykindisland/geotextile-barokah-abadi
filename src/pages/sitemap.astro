@@ -1,0 +1,194 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+
+const produk = await getCollection('produk');
+let blog: any[] = [];
+try {
+  blog = await getCollection('blog');
+} catch (e) {
+  // Collection might not exist yet
+}
+
+// Main Pages
+const mainPages = [
+  { title: 'Beranda', url: '/' },
+  { title: 'Katalog Produk', url: '/produk' },
+  { title: 'Tentang Kami', url: '/tentang-kami' },
+  { title: 'Kontak Kami', url: '/kontak' },
+];
+
+---
+
+<Layout 
+  title="Sitemap" 
+  description="Daftar seluruh halaman dan produk di Geotextile Barokah Abadi. Navigasi mudah untuk menemukan material geosintetik berkualitas."
+>
+  <div class="sitemap-hero">
+    <div class="container text-center">
+      <h1>Peta Situs (Sitemap)</h1>
+      <p>Navigasi lengkap seluruh konten Geotextile Barokah Abadi</p>
+    </div>
+  </div>
+
+  <section class="sitemap-section">
+    <div class="container">
+      <div class="sitemap-grid">
+        <!-- Halaman Utama -->
+        <div class="sitemap-card">
+          <div class="card-icon">🏠</div>
+          <h2>Halaman Utama</h2>
+          <ul>
+            {mainPages.map(page => (
+              <li><a href={page.url}>{page.title}</a></li>
+            ))}
+          </ul>
+        </div>
+
+        <!-- Katalog Produk -->
+        <div class="sitemap-card">
+          <div class="card-icon">💎</div>
+          <h2>Katalog Produk</h2>
+          <div class="product-list-wrapped">
+            <ul>
+              {produk.map(item => (
+                <li>
+                  <a href={`/produk/${item.id}`}>
+                    {item.data.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {blog.length > 0 && (
+          <div class="sitemap-card">
+            <div class="card-icon">📝</div>
+            <h2>Artikel & Berita</h2>
+            <ul>
+              {blog.map(post => (
+                <li>
+                  <a href={`/blog/${post.id}`}>
+                    {post.data.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        <!-- Informasi Kontak -->
+        <div class="sitemap-card">
+          <div class="card-icon">📞</div>
+          <h2>Bantuan & Kontak</h2>
+          <ul>
+            <li><a href="https://wa.me/628881211529">WhatsApp Business</a></li>
+            <li><a href="/kontak">Hubungi Tim Marketing</a></li>
+            <li><a href="/produk/geotextile">Info Geotextile</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .sitemap-hero {
+    background: linear-gradient(135deg, var(--primary) 0%, #042f24 100%);
+    padding: 100px 0 80px;
+    color: white;
+    text-align: center;
+  }
+  .sitemap-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+  }
+  .sitemap-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+
+  .sitemap-section {
+    padding: 80px 0;
+    background: #f8fafc;
+  }
+
+  .sitemap-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+  }
+
+  .sitemap-card {
+    background: white;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    border: 1px solid #f1f5f9;
+    transition: transform 0.3s ease;
+  }
+  .sitemap-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .sitemap-card h2 {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 25px;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 10px;
+  }
+
+  .sitemap-card ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .sitemap-card ul li {
+    margin-bottom: 15px;
+  }
+
+  .sitemap-card ul li a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+    display: block;
+  }
+
+  .sitemap-card ul li a:hover {
+    color: var(--accent);
+    padding-left: 5px;
+  }
+
+  .product-list-wrapped {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+
+  /* Custom Scrollbar */
+  .product-list-wrapped::-webkit-scrollbar {
+    width: 6px;
+  }
+  .product-list-wrapped::-webkit-scrollbar-track {
+    background: #f1f5f9;
+  }
+  .product-list-wrapped::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .sitemap-hero h1 {
+      font-size: 2.5rem;
+    }
+  }
+</style>
