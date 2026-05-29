@@ -1,50 +1,49 @@
-# Laporan Optimasi Google AI Summary (AI Overviews)
-## Geotextile Barokah Abadi
+# 🚀 Laporan Optimasi Modern SEO & AI Search 
+## Geotextile Barokah Abadi (Edisi 2026)
 
-Dokumen ini merangkum langkah-langkah teknis yang telah diterapkan pada website untuk meningkatkan peluang direkomendasikan oleh Google AI Summary (SGE).
-
----
-
-### 1. Optimasi Aksesibilitas Bot (Robots.txt)
-Telah dipastikan bahwa bot AI tidak terblokir melalui file `public/robots.txt`.
-
-**Konfigurasi Saat Ini:**
-```txt
-User-agent: *
-Disallow: 
-
-Sitemap: https://geotextile.barokahabadi.web.id/sitemap-index.xml
-```
-
-> [!IMPORTANT]
-> Jika menggunakan Cloudflare, pastikan fitur **"Block AI Scrapers and Crawlers"** di Dashboard Cloudflare dalam kondisi **OFF** agar aturan di atas tidak ditimpa oleh sistem keamanan Cloudflare.
+Laporan ini merangkum langkah-langkah strategis yang telah diimplementasikan untuk memastikan website ini mendominasi pencarian **Geosintetik** di Indonesia, baik melalui mesin pencari tradisional maupun AI Search (Google SGE, Perplexity, GPT-Search).
 
 ---
 
-### 2. Structured Data (Schema.org)
-Penambahan skrip JSON-LD pada `src/layouts/Layout.astro` untuk memberikan konteks mesin pada Google AI.
+## 1. 🎯 Golden Keywords (Target Utama)
+Berdasarkan riset terbaru, berikut adalah kata kunci "Emas" yang telah diintegrasikan secara organik ke dalam website:
 
-*   **LocalBusiness**: Menjelaskan identitas perusahaan, alamat (Tangerang), dan kontak.
-*   **WebSite**: Memungkinkan Google mengenali struktur situs sebagai entitas web resmi.
-
----
-
-### 3. FAQ Berbasis AI (FAQPage Schema)
-Google AI Overviews sering mengambil referensi dari Tanya-Jawab yang terstruktur. FAQ telah ditambahkan pada halaman Beranda dengan cakupan pertanyaan:
-1.  **Definisi Geotextile**: Menggunakan bahasa yang jelas dan informatif.
-2.  **Informasi Harga**: Memberikan gambaran transparan sebagai distributor.
-3.  **Standarisasi (SNI)**: Membangun otoritas dan kepercayaan (*Trust Factor*).
-4.  **Logistik**: Menjelaskan jangkauan nasional.
+| Tipe Keyword | Kata kunci Terpilih | Target Lokasi/Proyek |
+| :--- | :--- | :--- |
+| **Transactional** | `Distributor Geotextile Tangan Pertama`, `Harga Geotextile per m2 2026`, `Harga Pabrik SNI` | Nasional, Tangerang |
+| **Project Specific** | `Suplier Geotextile IKN`, `Proyek Trans Sumatra`, `Reklamasi Pantura` | Area Proyek Strategis |
+| **Authority** | `Standar Bina Marga`, `Uji CBR Laboratorium`, `Spesifikasi Geotextile Woven` | Kepercayaan Engineer |
 
 ---
 
-### 4. Strategi Konten Masa Depan
-Untuk mempertahankan peringkat di AI Summary, disarankan untuk:
-*   **Menjawab secara Langsung (Direct Answers)**: Pada setiap deskripsi produk, gunakan struktur kalimat "Produk X adalah [definisi] yang berfungsi untuk [manfaat]."
-*   **Gunakan Kata Kunci Long-tail**: AI sering mencari jawaban untuk pertanyaan spesifik seperti *"Berapa gramasi geotextile untuk jalan tanah lunak?"*
-*   **Perbanyak Review/Testimoni**: Google AI mulai mempertimbangkan ulasan pengguna untuk merekomendasikan layanan terbaik.
+## 2. 🧠 Optimasi AI Search (SGE & Modern Search)
+Untuk memenangkan AI Search, web harus memberikan jawaban langsung dan terstruktur.
+
+- **Enhanced Schema.org (JSON-LD):** 
+  - Memperbarui skema `Organization` dan `LocalBusiness`.
+  - Memperkuat konteks hubungan antara produk dan kredibilitas perusahaan.
+- **Direct Answer Section:** 
+  - Menambahkan tabel **Estimasi Harga 2026** di Beranda. AI sangat menyukai data tabel terstruktur untuk diekstrak menjadi ringkasan jawaban.
+  - Memperbarui FAQ dengan terminologi teknis yang sering ditanyakan AI.
 
 ---
 
-**Status Terakhir:** Teroptimalisasi ✅
-**Tanggal Update:** 28 Mei 2026
+## 3. 🛠️ Perubahan Teknis & Performa
+- **Metadata Tuning:** Mengoptimalkan meta description agar memiliki "CTA Meta" yang lebih kuat (Click-through Rate tinggi).
+- **Semantich HTML:** Memperbaiki hirarki Heading (H1-H3) agar Google memahami urutan kepentingan konten.
+- **Mobile Excellence:** Mengoptimalkan rendering table estimasi agar tetap *readable* di layar kecil (Mobile-Friendly).
+- **Image Intelligence:** Semua gambar kini menggunakan format **WebP** dengan metadata nama file yang mengandung keyword SEO.
+
+---
+
+## 4. 📈 Checklist "High Rank"
+- [x] **Lightweight:** Tidak ada JS berat yang menghambat loading.
+- [x] **Semantic:** Kata kunci tidak "spamming", tapi tersebar alami di Heading dan Bullet Points.
+- [x] **Rich Snippets:** Schema markup sudah valid untuk memunculkan bintang atau info harga di Google.
+- [x] **User Intent:** Fokus pada pencarian proyek (B2B) dengan volume besar.
+
+> [!TIP]
+> **Saran Strategis:** Teruslah mengunggah foto-foto proyek terbaru di bagian blog/artikel menggunakan format WebP dan berikan deskripsi lokasi proyek (Misal: "Suplai Geotextile Woven di Tol Trans Sumatra"). Ini akan memperkuat Otoritas Lokasi Anda di mata AI.
+
+---
+*Laporan ini dihasilkan oleh Antigravity AI - Spesialis Optimasi Geosintetik.*

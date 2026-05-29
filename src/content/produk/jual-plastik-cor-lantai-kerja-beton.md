@@ -35,6 +35,16 @@ Kami menyediakan dua varian utama yang sering digunakan dalam proyek infrastrukt
 ## Area Distribusi Cepat
 Kami melayani pengiriman grosir untuk wilayah Jakarta, Tangerang, Bekasi, hingga proyek pembangunan di IKN dan Sumatera. Dapatkan **harga plastik cor per roll** paling bersaing untuk pengambilan partai besar.
 
+
+## Mengapa Memilih Geotextile Barokah Abadi?
+
+Sebagai **distributor geotextile tangan pertama**, kami menjamin:
+- **Harga Kompetitif 2026:** Penawaran harga geotextile per m2 terbaik untuk RAB proyek Anda.
+- **Ready Stock Skala Besar:** Memenuhi kebutuhan proyek infrastruktur jalan, tol, dan bandara.
+- **Standar SNI & Bina Marga:** Produk telah melalui uji tarik dan tusuk di laboratorium terakreditasi.
+- **Pengiriman Seluruh Indonesia:** Pengalaman menyuplai proyek strategis di IKN, Trans Sumatra, dan remote area lainnya.
+
+> [Dapatkan Katalog & Penawaran Harga Terbaru &rarr;](https://wa.me/628881211529?text=Halo%20Barokah%20Abadi,%20saya%20butuh%20info%20harga%20terbaru%20untuk%20proyek)
 > [Hubungi via WhatsApp](https://wa.me/628881211529?text=Halo%20Geotextile%20Barokah%20Abadi,%20saya%20tertarik%20dengan%20produk%20Plastik%20Cor)
 
 ---

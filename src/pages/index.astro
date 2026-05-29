@@ -93,14 +93,13 @@ const highlightProducts = semuaProduk.slice(0, 3);
 		<div class="container hero-content">
 			<div class="badge">🔥 Agregator Distributor Tangan Pertama🔥</div>
 			<h1>
-				Solusi <span class="text-accent">Geosintetik</span> Tangguh<br
+				Distributor <span class="text-accent">Geotextile</span> Tangan Pertama<br
 				/>
-				Proyek Kelas Nasional
+				Harga Pabrik & SNI 2026
 			</h1>
 			<p>
-				Pusat grosir material berkualitas tinggi: Geotextile
-				Woven/Non-Woven, Geomembrane HDPE, dan Geogrid. Standar Bina
-				Marga & SNI dengan harga pabrik langsung.
+				Pusat grosir material geosintetik termurah: Geotextile
+				Woven & Non-Woven, Geomembrane HDPE, dan Geogrid. Pilihan utama untuk RAB efisien proyek jalan dan konstruksi nasional.
 			</p>
 
 			<div class="hero-actions">
@@ -124,32 +123,30 @@ const highlightProducts = semuaProduk.slice(0, 3);
 			<div class="trust-grid">
 				<div class="trust-item">
 					<div class="icon">🥇</div>
-					<h3>Standar SNI & ISO</h3>
+					<h3>Standar SNI & Bina Marga</h3>
 					<p>
-						Lulus uji tarik (Tensile) & tusuk laboratorium
-						terakreditasi.
+						Lulus uji tarik (Tensile) & CBR laboratorium untuk jaminan kualitas konstruksi.
 					</p>
 				</div>
 				<div class="trust-item">
 					<div class="icon">🏭</div>
-					<h3>Harga Tangan Pertama</h3>
+					<h3>Suplier Tangan Pertama</h3>
 					<p>
-						Jaminan harga pabrik grosir untuk menekan RAB proyek
-						Anda.
+						Langsung dari pabrik. Harga geotextile per m2 dijamin paling kompetitif 2026.
 					</p>
 				</div>
 				<div class="trust-item">
 					<div class="icon">🚚</div>
-					<h3>Pengiriman Cepat</h3>
+					<h3>Jangkauan Nasional</h3>
 					<p>
-						Armada logistik teruji. Siap kirim ke pelosok Nusantara.
+						Siap kirim dari Aceh hingga Papua, termasuk proyek strategis IKN & Trans Sumatra.
 					</p>
 				</div>
 				<div class="trust-item">
 					<div class="icon">🤝</div>
-					<h3>Konsultasi Engineer</h3>
+					<h3>Konsultasi Teknis</h3>
 					<p>
-						Gratis panduan teknis pemasangan dari tenaga ahli kami.
+						Gratis perhitungan volume dan spesifikasi material sesuai kebutuhan lapangan.
 					</p>
 				</div>
 			</div>
@@ -201,6 +198,49 @@ const highlightProducts = semuaProduk.slice(0, 3);
 					>Lihat Semua Produk &rarr;</a
 				>
 			</div>
+		</div>
+	</section>
+
+	<!-- PRICE & SPEC ESTIMATION (FOR SEO/AI SEARCH) -->
+	<section class="price-estimation">
+		<div class="container">
+			<h2 class="section-title">Estimasi Harga Geotextile 2026</h2>
+			<p class="section-subtitle">Daftar harga referensi per m2 untuk kebutuhan estimasi RAB proyek Anda.</p>
+			
+			<div class="table-responsive">
+				<table class="seo-table">
+					<thead>
+						<tr>
+							<th>Jenis Material</th>
+							<th>Spesifikasi (GSM)</th>
+							<th>Estimasi Harga per m2*</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Geotextile Non Woven</td>
+							<td>150 GSM - 250 GSM</td>
+							<td>Rp 11.000 - Rp 25.000</td>
+						</tr>
+						<tr>
+							<td>Geotextile Woven</td>
+							<td>150 GSM - 250 GSM</td>
+							<td>Rp 10.000 - Rp 28.000</td>
+						</tr>
+						<tr>
+							<td>Geomembrane HDPE</td>
+							<td>0.50 mm - 1.00 mm</td>
+							<td>Rp 15.000 - Rp 45.000</td>
+						</tr>
+						<tr>
+							<td>Geogrid Biaxial</td>
+							<td>20kN - 40kN</td>
+							<td>Hubungi Sales</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p class="price-note">*Harga dapat berubah sewaktu-waktu tergantung volume pemesanan dan lokasi proyek (Loco Pabrik).</p>
 		</div>
 	</section>
 
@@ -380,6 +420,50 @@ const highlightProducts = semuaProduk.slice(0, 3);
 	.faq-item p {
 		color: var(--text-muted);
 		line-height: 1.7;
+	}
+
+	/* Price Estimation Table */
+	.price-estimation {
+		padding: 100px 0;
+		background: #fff;
+	}
+	.table-responsive {
+		overflow-x: auto;
+		margin-top: 40px;
+		border-radius: 20px;
+		box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+	}
+	.seo-table {
+		width: 100%;
+		border-collapse: collapse;
+		background: white;
+		min-width: 600px;
+	}
+	.seo-table th {
+		background: var(--primary);
+		color: white;
+		text-align: left;
+		padding: 20px;
+		font-family: 'Outfit', sans-serif;
+	}
+	.seo-table td {
+		padding: 20px;
+		border-bottom: 1px solid #f1f5f9;
+		color: var(--text-main);
+		font-weight: 500;
+	}
+	.seo-table tr:last-child td {
+		border-bottom: none;
+	}
+	.seo-table tr:nth-child(even) {
+		background: #f8fafc;
+	}
+	.price-note {
+		margin-top: 20px;
+		font-size: 0.9rem;
+		color: var(--text-muted);
+		font-style: italic;
+		text-align: center;
 	}
 
 	/* Styling Hero dengan Slider Gambar */

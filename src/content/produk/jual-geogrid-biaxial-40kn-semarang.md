@@ -34,6 +34,16 @@ Geogrid Biaxial bekerja dengan prinsip *interlocking*. Saat material timbunan (a
 ## Distributor Area Jawa Tengah
 Kami melayani pengiriman satu hari (*Next Day*) untuk wilayah Semarang, Kendal, Demak, hingga Solo dan Yogyakarta. Dapatkan **harga geogrid biaxial** paling kompetitif langsung dari gudang pusat kami.
 
+
+## Mengapa Memilih Geotextile Barokah Abadi?
+
+Sebagai **distributor geotextile tangan pertama**, kami menjamin:
+- **Harga Kompetitif 2026:** Penawaran harga geotextile per m2 terbaik untuk RAB proyek Anda.
+- **Ready Stock Skala Besar:** Memenuhi kebutuhan proyek infrastruktur jalan, tol, dan bandara.
+- **Standar SNI & Bina Marga:** Produk telah melalui uji tarik dan tusuk di laboratorium terakreditasi.
+- **Pengiriman Seluruh Indonesia:** Pengalaman menyuplai proyek strategis di IKN, Trans Sumatra, dan remote area lainnya.
+
+> [Dapatkan Katalog & Penawaran Harga Terbaru &rarr;](https://wa.me/628881211529?text=Halo%20Barokah%20Abadi,%20saya%20butuh%20info%20harga%20terbaru%20untuk%20proyek)
 > [Hubungi via WhatsApp](https://wa.me/628881211529?text=Halo%20Geotextile%20Barokah%20Abadi,%20saya%20tertarik%20dengan%20produk%20Geogrid%20Biaxial)
 
 ---

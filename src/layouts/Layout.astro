@@ -16,39 +16,37 @@ const { title, description, canonicalUrl } = Astro.props;
 		<meta name="google-site-verification" content="bwmKLouqBrgXy8FWC1q2KPeI2cZFvhjufIt3L35ojr4" />
 		
 		<!-- SEO Meta Tags -->
-		<title>{title} | Geotextile Distributor Indonesia – Geotextile Barokah Abadi</title>
+		<title>{title} | Distributor Geotextile Tangan Pertama Indonesia</title>
 		<meta name="description" content={description} />
-		<meta name="keywords" content="geotextile, geomembrane, geogrid, distributor geotextile indonesia, material geosintetik, geotextile barokah abadi" />
-		<meta name="robots" content="index, follow" />
+		<meta name="keywords" content="distributor geotextile, harga geotextile per m2 2026, geotextile woven, geotextile non woven, geomembrane hdpe, geogrid biaxial, geosintetik indonesia, geotextile barokah abadi, harga pabrik geotextile, suplier proyek nasional" />
+		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 		{canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
 		
 		<!-- OpenGraph / Facebook -->
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content={Astro.url} />
-		<meta property="og:title" content="{title} | Geotextile Barokah Abadi" />
+		<meta property="og:title" content={title + " | Distributor Geotextile Tangan Pertama"} />
 		<meta property="og:description" content={description} />
-		<meta property="og:image" content="/og-image.webp" />
+		<meta property="og:image" content="https://geotextile.barokahabadi.web.id/og-image.webp" />
+		<meta property="og:image:alt" content="Geotextile Barokah Abadi - Material Geosintetik" />
 		<meta property="og:site_name" content="Geotextile Barokah Abadi" />
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
 		<meta property="twitter:url" content={Astro.url} />
-		<meta property="twitter:title" content="{title} | Geotextile Barokah Abadi" />
+		<meta property="twitter:title" content={title + " | Geotextile Barokah Abadi"} />
 		<meta property="twitter:description" content={description} />
-		<meta property="twitter:image" content="/og-image.webp" />
-		<meta property="twitter:site" content="@geotextilebarokah" />
+		<meta property="twitter:image" content="https://geotextile.barokahabadi.web.id/og-image.webp" />
 
 		<!-- Preload hero image for faster LCP -->
 		<link rel="preload" as="image" href="/hero/geotextile-woven-project-national.webp" />
-		<link rel="preload" as="image" href="/hero/geomembrane-hdpe.webp" />
-		<link rel="preload" as="image" href="/hero/geogrid-biaxial.webp" />
-		<link rel="preload" as="image" href="/hero/innovative-construction.webp" />
-
+		
 		<link rel="sitemap" href="/sitemap-index.xml" />
 		<link rel="icon" type="image/webp" href="/favicon.webp" />
 		<link rel="icon" type="image/png" href="/favicon.png" />
 		<meta name="generator" content={Astro.generator} />
 
+		<!-- Google Fonts Optimization -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -57,15 +55,13 @@ const { title, description, canonicalUrl } = Astro.props;
 		<script type="application/ld+json">
 			{
 				"@context": "https://schema.org",
-				"@type": "LocalBusiness",
+				"@type": "Organization",
 				"name": "Geotextile Barokah Abadi",
-				"alternateName": "Barokah Abadi Geosynthetics",
-				"description": "Distributor tangan pertama material geosintetik berkualitas tinggi: Geotextile, Geomembrane, Geogrid untuk proyek nasional Indonesia.",
+				"legalName": "Geotextile Barokah Abadi Indonesia",
+				"description": "Distributor tangan pertama material geosintetik berkualitas tinggi: Geotextile Woven/Non-Woven, Geomembrane, Geogrid untuk proyek infrastruktur nasional Indonesia.",
 				"url": "https://geotextile.barokahabadi.web.id",
 				"logo": "https://geotextile.barokahabadi.web.id/favicon.png",
 				"image": "https://geotextile.barokahabadi.web.id/og-image.webp",
-				"telephone": "+628881211529",
-				"email": "info@barokahabadi.web.id",
 				"address": {
 					"@type": "PostalAddress",
 					"streetAddress": "Tangerang",
@@ -73,28 +69,16 @@ const { title, description, canonicalUrl } = Astro.props;
 					"addressRegion": "Banten",
 					"addressCountry": "ID"
 				},
-				"geo": {
-					"@type": "GeoCoordinates",
-					"latitude": -6.1783,
-					"longitude": 106.6319
-				},
-				"openingHoursSpecification": {
-					"@type": "OpeningHoursSpecification",
-					"dayOfWeek": [
-						"Monday",
-						"Tuesday",
-						"Wednesday",
-						"Thursday",
-						"Friday",
-						"Saturday"
-					],
-					"opens": "08:00",
-					"closes": "17:00"
+				"contactPoint": {
+					"@type": "ContactPoint",
+					"telephone": "+628881211529",
+					"contactType": "sales",
+					"areaServed": "ID",
+					"availableLanguage": "Indonesian"
 				},
 				"sameAs": [
 					"https://wa.me/628881211529"
-				],
-				"priceRange": "$$"
+				]
 			}
 		</script>
 		<script type="application/ld+json">
