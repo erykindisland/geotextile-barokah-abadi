@@ -4,7 +4,7 @@ description: "Jual kawat bronjong pabrikasi SNI harga murah 2025. Distributor br
 priceLow: 350000
 priceHigh: 1200000
 seoKeyword: "jual kawat bronjong pabrikasi sni murah 2025"
-image: "https://www.primageotex.co.id/files/Bronjong/jual%20bronjong%20murah.jpg"
+image: "../../assets/products/jual-bronjong-murah.webp"
 category: "Geosynthetics"
 ---
 

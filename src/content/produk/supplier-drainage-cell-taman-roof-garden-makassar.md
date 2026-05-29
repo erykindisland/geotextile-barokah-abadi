@@ -4,7 +4,7 @@ description: "Jual drainage cell taman roof garden Jakarta murah harga pabrik. H
 priceLow: 65000
 priceHigh: 95000
 seoKeyword: "jual drainage cell taman roof garden jakarta murah"
-image: "https://www.primageotex.co.id/files/drainage%20cell/jual%20drainage%20cell%20murah.jpg"
+image: "../../assets/products/jual-drainage-cell-murah.webp"
 category: "Geosynthetics"
 ---
 
