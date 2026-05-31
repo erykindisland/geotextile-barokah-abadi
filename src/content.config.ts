@@ -16,12 +16,13 @@ const produkCollection = defineCollection({
 
 const blogCollection = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/blog" }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
     description: z.string(),
     pubDate: z.date().optional(),
     author: z.string().default('Tim Barokah Abadi'),
     seoKeyword: z.string().optional(),
+    image: image().optional().or(z.string().optional()),
   })
 });
 

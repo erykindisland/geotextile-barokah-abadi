@@ -303,6 +303,54 @@ const highlightProducts = semuaProduk.slice(0, 3);
 		</div>
 	</section>
 
+	<!-- RECENT BLOG POSTS SECTION -->
+	<section class="recent-blog">
+		<div class="container">
+			<h2 class="section-title">Wawasan & Edukasi Teknik</h2>
+			<p class="section-subtitle">
+				Tips konstruksi, panduan material, dan kabar terbaru seputar
+				dunia geosintetik Indonesia.
+			</p>
+
+			<div class="grid">
+				{
+					(await getCollection("blog")).slice(0, 3).map((post: any) => (
+						<article class="product-card">
+							<div class="card-image-wrapper">
+								{post.data.image && (
+									typeof post.data.image === 'string' ? (
+										<img src={post.data.image} alt={post.data.title} class="card-image" />
+									) : (
+										<Image
+											src={post.data.image}
+											alt={post.data.title}
+											width={400}
+											height={250}
+											format="webp"
+											class="card-image"
+										/>
+									)
+								)}
+							</div>
+							<div class="card-content">
+								<span class="blog-date">{post.data.pubDate ? new Date(post.data.pubDate).toLocaleDateString('id-ID', {day: 'numeric', month: 'long'}) : 'Terbaru'}</span>
+								<h3>{post.data.title}</h3>
+								<p>{post.data.description}</p>
+								<a href={`/blog/${post.id}`} class="link-more">
+									Selengkapnya &rarr;
+								</a>
+							</div>
+						</article>
+					))
+				}
+			</div>
+
+			<div style="text-align: center; margin-top: 50px;">
+				<a href="/blog" class="cta-button secondary-cta" style="color: var(--primary); border-color: var(--primary);">Lihat Semua Artikel</a>
+			</div>
+		</div>
+	</section>
+
 	<!-- FAQ SECTION FOR GOOGLE AI / SGE -->
 	<section class="faq-section">
 		<div class="container">
@@ -432,6 +480,15 @@ const highlightProducts = semuaProduk.slice(0, 3);
 	.faq-item p {
 		color: var(--text-muted);
 		line-height: 1.7;
+	}
+
+	.blog-date {
+		display: block;
+		font-size: 0.85rem;
+		color: var(--primary);
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 8px;
 	}
 
 	/* Price Estimation Table */

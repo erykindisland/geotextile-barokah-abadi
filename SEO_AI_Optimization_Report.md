@@ -22,9 +22,13 @@ Untuk memenangkan AI Search, web harus memberikan jawaban langsung dan terstrukt
 - **Enhanced Schema.org (JSON-LD):** 
   - Memperbarui skema `Organization` dan `LocalBusiness`.
   - Memperkuat konteks hubungan antara produk dan kredibilitas perusahaan.
+  - Implementasi skema `BlogPosting` untuk artikel edukatif.
 - **Direct Answer Section:** 
   - Menambahkan tabel **Estimasi Harga 2026** di Beranda. AI sangat menyukai data tabel terstruktur untuk diekstrak menjadi ringkasan jawaban.
   - Memperbarui FAQ dengan terminologi teknis yang sering ditanyakan AI.
+- **Content Expansion (KGR Strategy):**
+  - Peluncuran Bagian **Blog & Edukasi** untuk membangun Otoritas Topik (Topical Authority).
+  - Penambahan 4 produk strategis baru: Geogrid Uniaxial, Geopipe Perforated, Geocomposite, dan Slope Saver.
 
 ---
 
@@ -32,7 +36,7 @@ Untuk memenangkan AI Search, web harus memberikan jawaban langsung dan terstrukt
 - **Metadata Tuning:** Mengoptimalkan meta description agar memiliki "CTA Meta" yang lebih kuat (Click-through Rate tinggi).
 - **Semantich HTML:** Memperbaiki hirarki Heading (H1-H3) agar Google memahami urutan kepentingan konten.
 - **Mobile Excellence:** Mengoptimalkan rendering table estimasi agar tetap *readable* di layar kecil (Mobile-Friendly).
-- **Image Intelligence:** Semua gambar kini menggunakan format **WebP** dengan metadata nama file yang mengandung keyword SEO.
+- **Image Strategy:** Menggunakan referensi link gambar eksternal yang dioptimalkan dengan penanda (`image_status: remote`) untuk kemudahan migrasi ke aset lokal nantinya.
 
 ---
 
@@ -41,9 +45,11 @@ Untuk memenangkan AI Search, web harus memberikan jawaban langsung dan terstrukt
 - [x] **Semantic:** Kata kunci tidak "spamming", tapi tersebar alami di Heading dan Bullet Points.
 - [x] **Rich Snippets:** Schema markup sudah valid untuk memunculkan bintang atau info harga di Google.
 - [x] **User Intent:** Fokus pada pencarian proyek (B2B) dengan volume besar.
+- [x] **Topical Authority:** Blog aktif dengan target lokasi spesifik (Bandung) dan panduan teknis.
 
 > [!TIP]
-> **Saran Strategis:** Teruslah mengunggah foto-foto proyek terbaru di bagian blog/artikel menggunakan format WebP dan berikan deskripsi lokasi proyek (Misal: "Suplai Geotextile Woven di Tol Trans Sumatra"). Ini akan memperkuat Otoritas Lokasi Anda di mata AI.
+> **Saran Strategis:** Segera gantilah gambar referensi (external links) pada produk baru dengan foto proyek riil atau mockup 3D buatan kami untuk meningkatkan skor *Expertise* di mata Google (E-E-A-T).
 
 ---
+
 *Laporan ini dihasilkan oleh Antigravity AI - Spesialis Optimasi Geosintetik.*

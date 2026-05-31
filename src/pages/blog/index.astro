@@ -1,0 +1,230 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+
+const semuaBlog = await getCollection('blog');
+// Urutkan berdasarkan tanggal terbaru (asumsi ada pubDate)
+semuaBlog.sort((a: any, b: any) => {
+    const dateA = a.data.pubDate ? new Date(a.data.pubDate).getTime() : 0;
+    const dateB = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
+    return dateB - dateA;
+});
+---
+
+<Layout 
+	title="Blog & Berita Geosintetik Terkini | Geotextile Barokah Abadi"
+	description="Dapatkan informasi teknis, panduan pemilihan material, dan update proyek infrastruktur terbaru di blog Geotextile Barokah Abadi."
+>
+	<!-- Hero Section -->
+	<header class="blog-hero">
+		<div class="hero-overlay"></div>
+		<div class="container hero-inner">
+			<nav class="breadcrumb-nav">
+				<a href="/">Beranda</a> / <span>Blog & Edukasi</span>
+			</nav>
+			<h1>Blog <span class="text-accent">Edukasi</span> Geosintetik</h1>
+			<p>Wawasan mendalam mengenai teknologi geosintetik, tips konstruksi, dan kabar terbaru dari industri konstruksi nasional untuk membantu efisiensi proyek Anda.</p>
+		</div>
+	</header>
+
+	<main class="blog-section">
+		<div class="container">
+			<div class="blog-grid">
+				{semuaBlog.map((post: any) => (
+					<article class="blog-card">
+						<div class="card-img-box">
+							{post.data.image && (
+								typeof post.data.image === 'string' ? (
+									<img src={post.data.image} alt={post.data.title} class="card-img" />
+								) : (
+									<Image src={post.data.image} alt={post.data.title} width={600} height={400} format="webp" class="card-img" />
+								)
+							)}
+							<div class="card-date">
+								{post.data.pubDate ? new Date(post.data.pubDate).toLocaleDateString('id-ID', {day: 'numeric', month: 'long', year: 'numeric'}) : 'Terbaru'}
+							</div>
+						</div>
+						<div class="card-body">
+							<span class="author-tag">Oleh: {post.data.author || 'Admin'}</span>
+							<h3>{post.data.title}</h3>
+							<p>{post.data.description}</p>
+							
+							<div class="card-footer">
+								<a href={`/blog/${post.id}`} class="link-more">Baca Selengkapnya &rarr;</a>
+							</div>
+						</div>
+					</article>
+				))}
+			</div>
+
+			{semuaBlog.length === 0 && (
+				<div class="empty-state">
+					<div class="icon">✍️</div>
+					<h3>Belum ada artikel yang diterbitkan.</h3>
+					<p>Nantikan update informatif dari kami segera!</p>
+					<a href="/produk" class="btn-primary-sm">Lihat Katalog Produk</a>
+				</div>
+			)}
+		</div>
+	</main>
+</Layout>
+
+<style>
+	.blog-hero {
+		position: relative;
+		background: #0f172a;
+		padding: 100px 0 120px;
+		color: white;
+		text-align: center;
+		overflow: hidden;
+	}
+	.hero-overlay {
+		position: absolute;
+		top: 0; left: 0; width: 100%; height: 100%;
+		background: radial-gradient(circle at center, rgba(15, 118, 110, 0.3) 0%, transparent 70%);
+		z-index: 1;
+	}
+	.hero-inner {
+		position: relative;
+		z-index: 10;
+		max-width: 900px;
+	}
+	.breadcrumb-nav {
+		font-size: 0.9rem;
+		margin-bottom: 20px;
+		opacity: 0.7;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+	.breadcrumb-nav a {
+		color: white;
+		text-decoration: none;
+	}
+	.blog-hero h1 {
+		font-size: 3.5rem;
+		font-weight: 800;
+		margin-bottom: 20px;
+		line-height: 1.1;
+	}
+	.text-accent {
+		color: var(--secondary);
+	}
+	.blog-hero p {
+		font-size: 1.25rem;
+		opacity: 0.9;
+		line-height: 1.6;
+	}
+
+	.blog-section {
+		padding: 100px 0;
+		background: #f8fafc;
+	}
+	.blog-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+		gap: 50px;
+	}
+
+	.blog-card {
+		background: white;
+		border-radius: 24px;
+		overflow: hidden;
+		box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+		transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+		border: 1px solid #f1f5f9;
+		display: flex;
+		flex-direction: column;
+	}
+	.blog-card:hover {
+		transform: translateY(-10px);
+		box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+	}
+
+	.card-img-box {
+		position: relative;
+		height: 260px;
+		overflow: hidden;
+	}
+	.card-img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.6s ease;
+	}
+	.blog-card:hover .card-img {
+		transform: scale(1.1);
+	}
+	.card-date {
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		background: white;
+		color: #0f172a;
+		padding: 6px 14px;
+		border-radius: 8px;
+		font-size: 0.85rem;
+		font-weight: 700;
+		box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+	}
+
+	.card-body {
+		padding: 30px;
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+	}
+	.author-tag {
+		font-size: 0.8rem;
+		color: var(--primary);
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+		display: block;
+	}
+	.card-body h3 {
+		font-size: 1.6rem;
+		color: #0f172a;
+		margin-bottom: 15px;
+		font-weight: 700;
+		line-height: 1.3;
+	}
+	.card-body p {
+		color: #64748b;
+		line-height: 1.6;
+		margin-bottom: 25px;
+		flex-grow: 1;
+		font-size: 1.05rem;
+	}
+
+	.link-more {
+		display: inline-block;
+		color: var(--primary);
+		font-weight: 800;
+		text-decoration: none;
+		transition: all 0.3s;
+		font-size: 1rem;
+	}
+	.link-more:hover {
+		transform: translateX(5px);
+		color: var(--accent);
+	}
+
+	.empty-state {
+		text-align: center;
+		padding: 100px 0;
+	}
+	.empty-state .icon {
+		font-size: 4rem;
+		margin-bottom: 20px;
+	}
+
+	@media (max-width: 640px) {
+		.blog-hero h1 {
+			font-size: 2.5rem;
+		}
+		.blog-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
