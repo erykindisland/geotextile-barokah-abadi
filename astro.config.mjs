@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig, passthroughImageService } from 'astro/config';
 
 import sitemap from '@astrojs/sitemap';
 
@@ -9,5 +9,8 @@ import cloudflare from '@astrojs/cloudflare';
 export default defineConfig({
   site: 'https://geotextile.barokahabadi.web.id',
   integrations: [sitemap()],
-  adapter: cloudflare()
+  adapter: cloudflare(),
+  image: {
+    service: passthroughImageService()
+  }
 });
