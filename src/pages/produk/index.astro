@@ -1,7 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
-import { Image } from 'astro:assets';
 
 const semuaProduk = await getCollection('produk');
 ---
@@ -29,11 +28,12 @@ const semuaProduk = await getCollection('produk');
 					<article class="cat-product-card">
 						<div class="card-img-box">
 							{produk.data.image && (
-								typeof produk.data.image === 'string' ? (
-									<img src={produk.data.image} alt={produk.data.title} class="card-img" />
-								) : (
-									<Image src={produk.data.image} alt={produk.data.title} width={500} height={300} format="webp" class="card-img" />
-								)
+								<img
+									src={produk.data.image.src || produk.data.image}
+									alt={produk.data.title}
+									class="card-img"
+									loading="lazy"
+								/>
 							)}
 							<div class="card-tag">{produk.data.category || 'Premium'}</div>
 						</div>
