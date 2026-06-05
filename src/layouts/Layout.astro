@@ -6,6 +6,7 @@ export interface Props {
 }
 
 const { title, description, canonicalUrl } = Astro.props;
+const canonicalURL = canonicalUrl ? new URL(canonicalUrl, Astro.site) : new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
@@ -20,11 +21,11 @@ const { title, description, canonicalUrl } = Astro.props;
 		<meta name="description" content={description} />
 		<meta name="keywords" content="distributor geotextile, harga geotextile per m2 2026, geotextile woven, geotextile non woven, geomembrane hdpe, geogrid biaxial, geosintetik indonesia, geotextile barokah abadi, harga pabrik geotextile, suplier proyek nasional" />
 		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-		{canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+		<link rel="canonical" href={canonicalURL} />
 		
 		<!-- OpenGraph / Facebook -->
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content={Astro.url} />
+		<meta property="og:url" content={canonicalURL} />
 		<meta property="og:title" content={title + " | Distributor Geotextile Tangan Pertama"} />
 		<meta property="og:description" content={description} />
 		<meta property="og:image" content="https://geotextile.barokahabadi.web.id/og-image.webp" />
@@ -33,7 +34,7 @@ const { title, description, canonicalUrl } = Astro.props;
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:url" content={Astro.url} />
+		<meta property="twitter:url" content={canonicalURL} />
 		<meta property="twitter:title" content={title + " | Geotextile Barokah Abadi"} />
 		<meta property="twitter:description" content={description} />
 		<meta property="twitter:image" content="https://geotextile.barokahabadi.web.id/og-image.webp" />
