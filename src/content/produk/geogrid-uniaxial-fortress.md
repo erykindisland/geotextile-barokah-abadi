@@ -1,6 +1,6 @@
 ---
 title: "Jual Geogrid Uniaxial Fortress - Harga Pabrik Per Rol"
-description: "Distributor Geogrid Uniaxial spesialis perkuatan lereng dan dinding penahan tanah (MSE Wall). Tersedia berbagai tipe tensile strength standar SNI."
+description: "Penyedia Geogrid Uniaxial spesialis perkuatan lereng dan dinding penahan tanah (MSE Wall). Tersedia berbagai tipe tensile strength standar SNI."
 priceLow: 25000
 priceHigh: 65000
 image: "../../assets/products/geogrid-uniaxial-fortress.webp"
@@ -27,7 +27,7 @@ Dapatkan penawaran harga Geogrid Uniaxial terbaik untuk proyek Anda hanya di **G
 
 ## Mengapa Memilih Geotextile Barokah Abadi?
 
-Sebagai **distributor geotextile tangan pertama**, kami menjamin:
+Sebagai **Penyedia geotextile tangan pertama**, kami menjamin:
 - **Harga Kompetitif 2026:** Penawaran harga geotextile per m2 terbaik untuk RAB proyek Anda.
 - **Ready Stock Skala Besar:** Memenuhi kebutuhan proyek infrastruktur jalan, tol, dan bandara.
 - **Standar SNI & Bina Marga:** Produk telah melalui uji tarik dan tusuk di laboratorium terakreditasi.

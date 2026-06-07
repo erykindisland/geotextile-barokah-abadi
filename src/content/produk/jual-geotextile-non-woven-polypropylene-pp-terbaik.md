@@ -1,6 +1,6 @@
 ---
 title: "Jual Geotextile Non Woven Polypropylene (PP) Kualitas Terbaik"
-description: "Jual geotextile non woven polypropylene (PP) kualitas terbaik. Distributor geotextile non woven PET dan Continuous Filament standar SNI kekuatan tarik tinggi."
+description: "Jual geotextile non woven polypropylene (PP) kualitas terbaik. Penyedia geotextile non woven PET dan Continuous Filament standar SNI kekuatan tarik tinggi."
 priceLow: 12500
 priceHigh: 22500
 seoKeyword: "jual geotextile non woven polypropylene pp"
@@ -42,7 +42,7 @@ Kami juga menyediakan **Geotextile Non Woven Continuous Filament** (Brand: **Pri
 
 ## Mengapa Memilih Geotextile Barokah Abadi?
 
-Sebagai **distributor geotextile tangan pertama**, kami menjamin:
+Sebagai **Penyedia geotextile tangan pertama**, kami menjamin:
 - **Harga Kompetitif 2026:** Penawaran harga geotextile per m2 terbaik untuk RAB proyek Anda.
 - **Ready Stock Skala Besar:** Memenuhi kebutuhan proyek infrastruktur jalan, tol, dan bandara.
 - **Standar SNI & Bina Marga:** Produk telah melalui uji tarik dan tusuk di laboratorium terakreditasi.

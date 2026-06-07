@@ -1,6 +1,6 @@
 ---
 title: "Harga Geotextile Non Woven 250 Gram Standar SNI 2024"
-description: "Dapatkan harga geotextile non woven 250 gr per roll 2024 termurah langsung dari pabrik. Distributor geotextile non woven PET standar SNI Jakarta nomor satu."
+description: "Dapatkan harga geotextile non woven 250 gr per roll 2024 termurah langsung dari pabrik. Penyedia geotextile non woven PET standar SNI Jakarta nomor satu."
 priceLow: 8500
 priceHigh: 12500
 seoKeyword: "harga geotextile non woven 250 gr per roll 2024"
@@ -26,7 +26,7 @@ Berdasarkan standar industri (ASTM), berikut adalah nilai teknis rata-rata untuk
 
 ## Mengapa Memilih Geotextile Barokah Abadi?
 
-1.  **Distributor Tangan Pertama:** Kami menjamin **harga geotextile non woven 250 gram** yang kompetitif karena kami mensuplai langsung dari pabrik (grosir).
+1.  **Penyedia Tangan Pertama:** Kami menjamin **harga geotextile non woven 250 gram** yang kompetitif karena kami mensuplai langsung dari pabrik (grosir).
 2.  **Sertifikat Lengkap:** Seluruh produk kami dilengkapi dengan hasil uji laboratorium balai sertifikasi independent yang diakui oleh Kementerian PUPR.
 3.  **Varian Lengkap:** Tersedia gramasi 150gr, 200gr, hingga 600gr. Kami juga menyediakan **Geotextile Non Woven Continuous Filament** untuk kekuatan filtrasi maksimum.
 

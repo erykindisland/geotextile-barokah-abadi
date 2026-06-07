@@ -1,6 +1,6 @@
 ---
 title: "Harga Pipa Corrugated Geopipe Drainase Bandung 2024"
-description: "Harga pipa corrugated geopipe drainase Bandung 2024 murah. Distributor pipa HDPE perforated single & double wall untuk drainase bawah permukaan tanah."
+description: "Harga pipa corrugated geopipe drainase Bandung 2024 murah. Penyedia pipa HDPE perforated single & double wall untuk drainase bawah permukaan tanah."
 priceLow: 55000
 priceHigh: 185000
 seoKeyword: "harga pipa corrugated geopipe bandung"
@@ -39,7 +39,7 @@ Pipa ini memiliki profil bergelombang (*corrugated*) yang memberikan rasio kekua
 
 ## Mengapa Memilih Geotextile Barokah Abadi?
 
-Sebagai **distributor geotextile tangan pertama**, kami menjamin:
+Sebagai **Penyedia geotextile tangan pertama**, kami menjamin:
 - **Harga Kompetitif 2026:** Penawaran harga geotextile per m2 terbaik untuk RAB proyek Anda.
 - **Ready Stock Skala Besar:** Memenuhi kebutuhan proyek infrastruktur jalan, tol, dan bandara.
 - **Standar SNI & Bina Marga:** Produk telah melalui uji tarik dan tusuk di laboratorium terakreditasi.

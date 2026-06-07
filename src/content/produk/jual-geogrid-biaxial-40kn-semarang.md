@@ -31,13 +31,13 @@ Geogrid Biaxial bekerja dengan prinsip *interlocking*. Saat material timbunan (a
 2.  **Meningkatkan CBR Tanah:** Sangat efektif untuk mengatasi tanah dasar lunak (*clay/silt*) di proyek Trans Jawa.
 3.  **Ketahanan UV Tinggi:** Dilapisi *carbon black* untuk menjamin kekuatan material tetap terjaga meski terpapar matahari saat instalasi.
 
-## Distributor Area Jawa Tengah
+## Penyedia Area Jawa Tengah
 Kami melayani pengiriman satu hari (*Next Day*) untuk wilayah Semarang, Kendal, Demak, hingga Solo dan Yogyakarta. Dapatkan **harga geogrid biaxial** paling kompetitif langsung dari gudang pusat kami.
 
 
 ## Mengapa Memilih Geotextile Barokah Abadi?
 
-Sebagai **distributor geotextile tangan pertama**, kami menjamin:
+Sebagai **Penyedia geotextile tangan pertama**, kami menjamin:
 - **Harga Kompetitif 2026:** Penawaran harga geotextile per m2 terbaik untuk RAB proyek Anda.
 - **Ready Stock Skala Besar:** Memenuhi kebutuhan proyek infrastruktur jalan, tol, dan bandara.
 - **Standar SNI & Bina Marga:** Produk telah melalui uji tarik dan tusuk di laboratorium terakreditasi.

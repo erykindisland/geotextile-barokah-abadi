@@ -1,10 +1,10 @@
 ---
 title: "Harga Plastik Cor Per Roll Lantai Kerja Beton 2024"
-description: "Dapatkan harga plastik cor per roll untuk lantai kerja beton 2024. Distributor plastik cor bening / hijau tebal 0.05 mm dan 0.10 mm harga pabrik termurah."
+description: "Dapatkan harga plastik cor per roll untuk lantai kerja beton 2024. Penyedia plastik cor bening / hijau tebal 0.05 mm dan 0.10 mm harga pabrik termurah."
 priceLow: 350000
 priceHigh: 850000
 seoKeyword: "harga plastik cor per roll"
-image: "../../assets/products/distributor-plastik-cor.webp"
+image: "../../assets/products/Penyedia-plastik-cor.webp"
 category: "Geosynthetics"
 ---
 
@@ -38,7 +38,7 @@ Kami melayani pengiriman grosir untuk wilayah Jakarta, Tangerang, Bekasi, hingga
 
 ## Mengapa Memilih Geotextile Barokah Abadi?
 
-Sebagai **distributor geotextile tangan pertama**, kami menjamin:
+Sebagai **Penyedia geotextile tangan pertama**, kami menjamin:
 - **Harga Kompetitif 2026:** Penawaran harga geotextile per m2 terbaik untuk RAB proyek Anda.
 - **Ready Stock Skala Besar:** Memenuhi kebutuhan proyek infrastruktur jalan, tol, dan bandara.
 - **Standar SNI & Bina Marga:** Produk telah melalui uji tarik dan tusuk di laboratorium terakreditasi.

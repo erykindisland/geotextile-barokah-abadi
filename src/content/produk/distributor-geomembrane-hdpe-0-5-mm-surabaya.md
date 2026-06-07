@@ -10,7 +10,7 @@ category: "Geomembrane"
 
 # Supplier Geomembrane HDPE 0.5 mm Surabaya
 
-Geotextile Barokah Abadi adalah **Distributor Utama & Supplier Geomembrane HDPE 0.5 mm** dengan jaminan harga pabrik untuk wilayah Surabaya dan sekitarnya. Material kami terbuat dari resin Polyethylene densitas tinggi murni (*Virgin Resin*) yang dirancang khusus untuk ketahanan jangka panjang terhadap paparan bahan kimia korosif dan radiasi ultra-violet (UV).
+Geotextile Barokah Abadi adalah **Penyedia Utama & Supplier Geomembrane HDPE 0.5 mm** dengan jaminan harga pabrik untuk wilayah Surabaya dan sekitarnya. Material kami terbuat dari resin Polyethylene densitas tinggi murni (*Virgin Resin*) yang dirancang khusus untuk ketahanan jangka panjang terhadap paparan bahan kimia korosif dan radiasi ultra-violet (UV).
 
 ## Solusi Kedap Air Sempurna
 
@@ -38,7 +38,7 @@ Kami menyediakan layanan pengadaan **harga geomembrane per m2** terbaik untuk pr
 
 ## Mengapa Memilih Geotextile Barokah Abadi?
 
-Sebagai **distributor geotextile tangan pertama**, kami menjamin:
+Sebagai **Penyedia geotextile tangan pertama**, kami menjamin:
 - **Harga Kompetitif 2026:** Penawaran harga geotextile per m2 terbaik untuk RAB proyek Anda.
 - **Ready Stock Skala Besar:** Memenuhi kebutuhan proyek infrastruktur jalan, tol, dan bandara.
 - **Standar SNI & Bina Marga:** Produk telah melalui uji tarik dan tusuk di laboratorium terakreditasi.

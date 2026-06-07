@@ -1,6 +1,6 @@
 ---
 title: "Jual Kawat Bronjong Pabrikasi SNI Murah 2025"
-description: "Jual kawat bronjong pabrikasi SNI harga murah 2025. Distributor bronjong kawat galvanis tebal Balikpapan (IKN) untuk penahan tebing longsor dan normalisasi sungai."
+description: "Jual kawat bronjong pabrikasi SNI harga murah 2025. Penyedia bronjong kawat galvanis tebal Balikpapan (IKN) untuk penahan tebing longsor dan normalisasi sungai."
 priceLow: 350000
 priceHigh: 1200000
 seoKeyword: "jual kawat bronjong pabrikasi sni murah 2025"
@@ -34,7 +34,7 @@ Sebagai mitra strategis pembangunan **IKN (Balikpapan/Samarinda)**, kami memilik
 
 ## Mengapa Memilih Geotextile Barokah Abadi?
 
-Sebagai **distributor geotextile tangan pertama**, kami menjamin:
+Sebagai **Penyedia geotextile tangan pertama**, kami menjamin:
 - **Harga Kompetitif 2026:** Penawaran harga geotextile per m2 terbaik untuk RAB proyek Anda.
 - **Ready Stock Skala Besar:** Memenuhi kebutuhan proyek infrastruktur jalan, tol, dan bandara.
 - **Standar SNI & Bina Marga:** Produk telah melalui uji tarik dan tusuk di laboratorium terakreditasi.

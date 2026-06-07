@@ -91,7 +91,7 @@ const highlightProducts = semuaProduk.slice(0, 3);
 		</div>
 
 		<div class="container hero-content">
-			<div class="badge">🔥 Distributor Tangan Pertama🔥</div>
+			<div class="badge">🔥 Penyedia Geosintetik Tangan Pertama🔥</div>
 			<h1>
 				Distributor <span class="text-accent">Geotextile</span>
 				Tangan Pertama<br />
@@ -174,7 +174,10 @@ const highlightProducts = semuaProduk.slice(0, 3);
 							<div class="card-image-wrapper">
 								{produk.data.image && (
 									<img
-										src={produk.data.image.src || produk.data.image}
+										src={
+											produk.data.image.src ||
+											produk.data.image
+										}
 										alt={produk.data.title}
 										width={400}
 										height={250}
@@ -314,39 +317,61 @@ const highlightProducts = semuaProduk.slice(0, 3);
 
 			<div class="grid">
 				{
-					(await getCollection("blog")).slice(0, 3).map((post: any) => (
-						<article class="product-card">
-							<div class="card-image-wrapper">
-								{post.data.image && (
-									typeof post.data.image === 'string' ? (
-										<img src={post.data.image} alt={post.data.title} class="card-image" />
-									) : (
-										<img
-											src={post.data.image.src}
-											alt={post.data.title}
-											width={400}
-											height={250}
-											class="card-image"
-											loading="lazy"
-										/>
-									)
-								)}
-							</div>
-							<div class="card-content">
-								<span class="blog-date">{post.data.pubDate ? new Date(post.data.pubDate).toLocaleDateString('id-ID', {day: 'numeric', month: 'long'}) : 'Terbaru'}</span>
-								<h3>{post.data.title}</h3>
-								<p>{post.data.description}</p>
-								<a href={`/blog/${post.id}`} class="link-more">
-									Selengkapnya &rarr;
-								</a>
-							</div>
-						</article>
-					))
+					(await getCollection("blog"))
+						.slice(0, 3)
+						.map((post: any) => (
+							<article class="product-card">
+								<div class="card-image-wrapper">
+									{post.data.image &&
+										(typeof post.data.image === "string" ? (
+											<img
+												src={post.data.image}
+												alt={post.data.title}
+												class="card-image"
+											/>
+										) : (
+											<img
+												src={post.data.image.src}
+												alt={post.data.title}
+												width={400}
+												height={250}
+												class="card-image"
+												loading="lazy"
+											/>
+										))}
+								</div>
+								<div class="card-content">
+									<span class="blog-date">
+										{post.data.pubDate
+											? new Date(
+													post.data.pubDate,
+												).toLocaleDateString("id-ID", {
+													day: "numeric",
+													month: "long",
+												})
+											: "Terbaru"}
+									</span>
+									<h3>{post.data.title}</h3>
+									<p>{post.data.description}</p>
+									<a
+										href={`/blog/${post.id}`}
+										class="link-more"
+									>
+										Selengkapnya &rarr;
+									</a>
+								</div>
+							</article>
+						))
 				}
 			</div>
 
 			<div style="text-align: center; margin-top: 50px;">
-				<a href="/blog" class="cta-button secondary-cta" style="color: var(--primary); border-color: var(--primary);">Lihat Semua Artikel</a>
+				<a
+					href="/blog"
+					class="cta-button secondary-cta"
+					style="color: var(--primary); border-color: var(--primary);"
+					>Lihat Semua Artikel</a
+				>
 			</div>
 		</div>
 	</section>
