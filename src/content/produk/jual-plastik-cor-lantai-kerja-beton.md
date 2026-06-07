@@ -4,7 +4,7 @@ description: "Dapatkan harga plastik cor per roll untuk lantai kerja beton 2024.
 priceLow: 350000
 priceHigh: 850000
 seoKeyword: "harga plastik cor per roll"
-image: "../../assets/products/Penyedia-plastik-cor.webp"
+image: "../../assets/products/distributor-plastik-cor.webp"
 category: "Geosynthetics"
 ---
 
