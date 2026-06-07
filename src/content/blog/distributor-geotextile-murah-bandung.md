@@ -3,7 +3,7 @@ title: "Penyedia Geotextile Bandung - Harga Murah & Ready Stok 2026"
 description: "Mencari supplier geotextile di Bandung? Barokah Abadi menyediakan Non Woven & Woven geotextile dengan harga tangan pertama untuk proyek di Bandung."
 pubDate: 2024-05-31
 author: "Admin Barokah Abadi"
-image: "../../assets/blog/Penyedia-geotextile-murah-bandung.webp"
+image: "../../assets/blog/distributor-geotextile-murah-bandung.webp"
 seoKeyword: "Penyedia geotextile bandung"
 ---
 
