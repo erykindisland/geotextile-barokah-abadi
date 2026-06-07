@@ -3,12 +3,12 @@
 # 📘 Panduan Lengkap `npm run` & GitHub Desktop (Push)
 
 ## Ringkasan
-Panduan ini merangkum empat langkah penting dalam alur kerja proyek Astro‑Cloudflare Anda:
+Panduan ini merangkum lima langkah penting dalam alur kerja proyek Astro‑Cloudflare Anda:
 - **`npm run build`** – Meng‑compile semua sumber (`.astro`, `.md`, CSS, JS) menjadi aset statis di folder `dist/`. Digunakan untuk memeriksa error build sebelum deployment.
+- **`npm run dev`** – Menjalankan server development lokal dengan fitur *hot‑reload*. Digunakan selama proses pengkodean untuk melihat perubahan secara real‑time.
 - **`npm run preview`** – Menjalankan `npm run build` lalu meluncurkan **Miniflare** (`wrangler dev`) yang meniru lingkungan Cloudflare secara lokal, sehingga Anda dapat memverifikasi perilaku produksi sebelum men‑push.
 - **`npm run deploy`** – Membuat build kemudian meng‑upload hasilnya ke Cloudflare Workers/Pages via `wrangler deploy`. Ini adalah cara manual untuk memublikasikan situs.
-- **Push di GitHub Desktop** – Mengirim commit ke remote GitHub. Jika integrasi Cloudflare aktif, push otomatis memicu proses build & deploy di server Cloudflare; bila tidak, Anda dapat men‑deploy secara manual dengan `npm run deploy`.
-Gunakan urutan **build → preview → (opsional) deploy** atau **build → push** sesuai kebutuhan Anda.
+- **Push di GitHub Desktop** – Mengirim commit ke remote GitHub. Jika integrasi Cloudflare aktif, push otomatis memicu proses build & deploy di server Cloudflare.
 ## 📦 Apa Itu `npm run`?
 `npm run <script>` adalah cara mengeksekusi **script** yang didefinisikan di dalam file **`package.json`** proyek Anda.  
 Script‑script ini biasanya berisi perintah‑perintah yang berhubungan dengan **build**, **preview**, atau **deploy** aplikasi Astro/Cloudflare Workers Anda.
@@ -59,6 +59,26 @@ Jika berhasil, terminal akan menampilkan sesuatu seperti:
 ✔ Build complete
 ```
 Jika ada error, perbaiki dulu sebelum melanjutkan.
+
+---
+
+## 🛠️ `npm run dev`
+### Apa yang dilakukan?
+- Menjalankan **Astro development server** secara lokal.
+- Memberikan fitur **Hot Module Replacement (HMR)**: setiap kali Anda menyimpan perubahan pada file, browser akan otomatis diperbarui secara instan.
+- Sangat cepat karena tidak melakukan optimasi build penuh (seperti minifikasi), sehingga ideal untuk development.
+
+### Kapan harus dijalankan?
+| Situasi | Kenapa? |
+|---|---|
+| **Saat Coding / Desain** | Untuk melihat perubahan UI, konten, dan layout secara langsung tanpa menunggu proses build yang lama. |
+| **Menambah Konten** | Saat menulis artikel blog atau deskripsi produk baru untuk melihat hasilnya di browser. |
+
+### Cara menjalankan
+```bash
+npm run dev
+```
+Secara default, situs Anda akan tersedia di `http://localhost:4321`.
 
 ---
 
@@ -136,8 +156,8 @@ Setelah push, layanan yang terhubung (misalnya Cloudflare) dapat men-trigger pro
 ## 📚 Ringkasan Cepat (Cheat‑Sheet)
 | Perintah | Tujuan | Kapan Pakai |
 |---|---|---|
-| `npm run dev` | Jalankan server development Astro (hot‑reload). | Saat mengedit UI/UX, ingin lihat perubahan secara real‑time. |
 | `npm run build` | Compile semua source menjadi static assets. | Sebelum deploy, setelah mengubah konfigurasi, atau saat ingin memeriksa error build. |
+| `npm run dev` | Jalankan server development Astro (hot‑reload). | Saat mengedit UI/UX, ingin lihat perubahan secara real‑time. |
 | `npm run preview` | Build + jalankan Miniflare (simulasi Cloudflare). | Sebelum push, setelah mengubah logika Workers, atau ingin menguji binding KV/D1. |
 | `npm run deploy` | Build + upload ke Cloudflare Workers/Pages. | Setelah preview berhasil, atau saat menonaktifkan auto‑deploy. |
 | **GitHub Desktop – Push** | Kirim commit ke remote GitHub. | Setiap selesai selesai perubahan; memicu auto‑deploy (jika terhubung). |
