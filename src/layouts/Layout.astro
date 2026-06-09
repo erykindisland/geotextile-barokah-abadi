@@ -17,7 +17,7 @@ const canonicalURL = canonicalUrl ? new URL(canonicalUrl, Astro.site) : new URL(
 		<meta name="google-site-verification" content="bwmKLouqBrgXy8FWC1q2KPeI2cZFvhjufIt3L35ojr4" />
 		
 		<!-- SEO Meta Tags -->
-		<title>{title} | Penyedia Geotextile Tangan Pertama Indonesia</title>
+		<title>{title}</title>
 		<meta name="description" content={description} />
 		<meta name="keywords" content="penyedia geotextile, harga geotextile per m2 2026, geotextile woven, geotextile non woven, geomembrane hdpe, geogrid biaxial, geosintetik indonesia, geotextile barokah abadi, harga pabrik geotextile, suplier proyek nasional" />
 		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -26,7 +26,7 @@ const canonicalURL = canonicalUrl ? new URL(canonicalUrl, Astro.site) : new URL(
 		<!-- OpenGraph / Facebook -->
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content={canonicalURL} />
-		<meta property="og:title" content={title + " | Penyedia Geotextile Tangan Pertama"} />
+		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:image" content="https://geotextile.barokahabadi.web.id/og-image.webp" />
 		<meta property="og:image:alt" content="Geotextile Barokah Abadi - Material Geosintetik" />
@@ -43,6 +43,7 @@ const canonicalURL = canonicalUrl ? new URL(canonicalUrl, Astro.site) : new URL(
 		<link rel="preload" as="image" href="/hero/geotextile-woven-project-national.webp" />
 		
 		<link rel="sitemap" href="/sitemap-index.xml" />
+		<link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt – AI-readable site summary" />
 		<link rel="icon" type="image/webp" href="/favicon.webp" />
 		<link rel="icon" type="image/png" href="/favicon.png" />
 		<link rel="manifest" href="/manifest.json" />
@@ -54,48 +55,72 @@ const canonicalURL = canonicalUrl ? new URL(canonicalUrl, Astro.site) : new URL(
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-		<!-- JSON-LD Structured Data (Schema.org) for Google AI / SGE -->
+		<!-- JSON-LD: Organization + LocalBusiness (Google Maps & AI Overviews) -->
 		<script type="application/ld+json">
 			{
 				"@context": "https://schema.org",
-				"@type": "Organization",
-				"name": "Geotextile Barokah Abadi",
-				"legalName": "Geotextile Barokah Abadi Indonesia",
-				"description": "Penyedia tangan pertama material geosintetik berkualitas tinggi: Geotextile Woven/Non-Woven, Geomembrane, Geogrid untuk proyek infrastruktur nasional Indonesia.",
-				"url": "https://geotextile.barokahabadi.web.id",
-				"logo": "https://geotextile.barokahabadi.web.id/favicon.png",
-				"image": "https://geotextile.barokahabadi.web.id/og-image.webp",
-				"address": {
-					"@type": "PostalAddress",
-					"streetAddress": "Tangerang",
-					"addressLocality": "Tangerang",
-					"addressRegion": "Banten",
-					"addressCountry": "ID"
-				},
-				"contactPoint": {
-					"@type": "ContactPoint",
-					"telephone": "+628881211529",
-					"contactType": "sales",
-					"areaServed": "ID",
-					"availableLanguage": "Indonesian"
-				},
-				"sameAs": [
-					"https://wa.me/628881211529"
+				"@graph": [
+					{
+						"@type": ["Organization", "LocalBusiness"],
+						"@id": "https://geotextile.barokahabadi.web.id/#business",
+						"name": "Geotextile Barokah Abadi",
+						"legalName": "Geotextile Barokah Abadi Indonesia",
+						"description": "Penyedia tangan pertama material geosintetik berkualitas tinggi standar SNI: Geotextile Woven, Non Woven, Geomembrane HDPE, Geogrid, Geocell, dan Kawat Bronjong untuk proyek infrastruktur nasional Indonesia.",
+						"url": "https://geotextile.barokahabadi.web.id",
+						"logo": "https://geotextile.barokahabadi.web.id/favicon.png",
+						"image": "https://geotextile.barokahabadi.web.id/og-image.webp",
+						"priceRange": "$$",
+						"openingHoursSpecification": {
+							"@type": "OpeningHoursSpecification",
+							"dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+							"opens": "08:00",
+							"closes": "17:00"
+						},
+						"address": {
+							"@type": "PostalAddress",
+							"streetAddress": "Kavling DPR",
+							"addressLocality": "Tangerang",
+							"addressRegion": "Banten",
+							"postalCode": "15124",
+							"addressCountry": "ID"
+						},
+						"geo": {
+							"@type": "GeoCoordinates",
+							"latitude": "-6.2383",
+							"longitude": "106.6182"
+						},
+						"telephone": "+628881211529",
+						"email": "admin@geotextile.barokahabadi.web.id",
+						"areaServed": {
+							"@type": "Country",
+							"name": "Indonesia"
+						},
+						"contactPoint": {
+							"@type": "ContactPoint",
+							"telephone": "+628881211529",
+							"contactType": "sales",
+							"areaServed": "ID",
+							"availableLanguage": "Indonesian"
+						},
+						"hasMap": "https://maps.google.com/?q=Tangerang,Banten,Indonesia",
+						"sameAs": [
+							"https://wa.me/628881211529"
+						]
+					},
+					{
+						"@type": "WebSite",
+						"@id": "https://geotextile.barokahabadi.web.id/#website",
+						"url": "https://geotextile.barokahabadi.web.id",
+						"name": "Geotextile Barokah Abadi",
+						"description": "Penyedia Geosintetik Tangan Pertama Indonesia",
+						"inLanguage": "id-ID",
+						"potentialAction": {
+							"@type": "SearchAction",
+							"target": "https://geotextile.barokahabadi.web.id/produk?q={search_term_string}",
+							"query-input": "required name=search_term_string"
+						}
+					}
 				]
-			}
-		</script>
-		<script type="application/ld+json">
-			{
-				"@context": "https://schema.org",
-				"@type": "WebSite",
-				"url": "https://geotextile.barokahabadi.web.id",
-				"name": "Geotextile Barokah Abadi",
-				"alternateName": ["Geotextile Barokah", "Geotextile Barokah Abadi Geotextile"],
-				"potentialAction": {
-					"@type": "SearchAction",
-					"target": "https://geotextile.barokahabadi.web.id/produk?q={search_term_string}",
-					"query-input": "required name=search_term_string"
-				}
 			}
 		</script>
 	</head>
