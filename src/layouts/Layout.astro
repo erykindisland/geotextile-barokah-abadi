@@ -105,7 +105,11 @@ const canonicalURL = canonicalUrl ? new URL(canonicalUrl, Astro.site) : new URL(
 						"hasMap": "https://maps.google.com/?q=Tangerang,Banten,Indonesia",
 						"sameAs": [
 							"https://wa.me/628881211529",
-							"https://maps.app.goo.gl/GD8mgNDbTjHwnZaW7"
+							"https://maps.app.goo.gl/GD8mgNDbTjHwnZaW7",
+							"https://www.linkedin.com/company/geotextile-barokah-abadi",
+							"https://www.facebook.com/geotextilebarokahabadi",
+							"https://www.instagram.com/geotextilebarokahabadi",
+							"https://www.youtube.com/@GeotextileBarokahAbadi"
 						]
 					},
 					{
@@ -186,8 +190,16 @@ const canonicalURL = canonicalUrl ? new URL(canonicalUrl, Astro.site) : new URL(
 						<li><a href="/tentang-kami">Tentang Kami</a></li>
 						<li><a href="/blog">Blog & Edukasi</a></li>
 						<li><a href="/sitemap">Sitemap</a></li>
-						<li><a href="https://wa.me/628881211529">Hubungi Kami (WA)</a></li>
-						<li><a href="https://maps.app.goo.gl/GD8mgNDbTjHwnZaW7" target="_blank" rel="noopener noreferrer">Profil Bisnis</a></li>
+					</ul>
+				</div>
+				
+				<div class="footer-links">
+					<h3>Sosial Media</h3>
+					<ul>
+						<li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn Perusahaan</a></li>
+						<li><a href="#" target="_blank" rel="noopener noreferrer">Halaman Facebook</a></li>
+						<li><a href="#" target="_blank" rel="noopener noreferrer">Instagram (@geotextilebarokahabadi)</a></li>
+						<li><a href="#" target="_blank" rel="noopener noreferrer">Channel YouTube</a></li>
 					</ul>
 				</div>
 			</div>
@@ -370,7 +382,7 @@ const canonicalURL = canonicalUrl ? new URL(canonicalUrl, Astro.site) : new URL(
 	}
 	.footer-grid {
 		display: grid;
-		grid-template-columns: 2fr 1fr 1fr;
+		grid-template-columns: 2fr 1.5fr 1fr 1fr;
 		gap: 60px;
 		margin-bottom: 60px;
 	}
