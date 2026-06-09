@@ -3,7 +3,7 @@ title: "Cara Menghitung Kebutuhan Geotextile untuk Proyek Jalan – Panduan Tekn
 description: "Panduan lengkap cara menghitung volume kebutuhan geotextile untuk proyek jalan, tol, dan stabilisasi tanah. Dilengkapi rumus, contoh perhitungan, dan tabel gramasi sesuai standar Bina Marga 2026."
 pubDate: 2026-06-09
 author: "Tim Teknis Geotextile Barokah Abadi"
-image: "../../assets/blog/cara-memilih-gramasi-geotextile-non-woven.webp"
+image: "../../assets/blog/cara-menghitung-kebutuhan-geotextile-proyek-jalan.webp"
 seoKeyword: "cara menghitung kebutuhan geotextile"
 ---
 

@@ -3,7 +3,7 @@ title: "Apa itu Geotextile? Fungsi, Jenis, dan Standar SNI yang Wajib Diketahui"
 description: "Panduan lengkap: apa itu geotextile, 4 fungsi utamanya dalam konstruksi tanah (separasi, filtrasi, drainase, perkuatan), perbedaan woven vs non woven, serta standar SNI yang berlaku di Indonesia."
 pubDate: 2026-06-09
 author: "Tim Teknis Geotextile Barokah Abadi"
-image: "../../assets/blog/cara-memilih-gramasi-geotextile-non-woven.webp"
+image: "../../assets/blog/apa-itu-geotextile-fungsi-jenis-standar-sni.webp"
 seoKeyword: "apa itu geotextile"
 ---
 

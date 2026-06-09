@@ -3,7 +3,7 @@ title: "Harga Geomembrane HDPE 2026 Per m² dari Pabrik – Update Terbaru"
 description: "Daftar harga geomembrane HDPE terbaru 2026 per meter persegi untuk berbagai ketebalan (0.5mm–2mm). Termasuk faktor yang mempengaruhi harga, cara hitung kebutuhan volume, dan tips pembelian dari pabrik."
 pubDate: 2026-06-09
 author: "Tim Sales Geotextile Barokah Abadi"
-image: "../../assets/blog/distributor-geotextile-murah-bandung.webp"
+image: "../../assets/blog/harga-geomembrane-hdpe-2026-per-m2-dari-pabrik.webp"
 seoKeyword: "harga geomembrane HDPE 2026"
 ---
 
